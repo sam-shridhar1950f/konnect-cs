@@ -1,4 +1,4 @@
 # konnect-cs
 
 ## Description
-A WIP Project utilizing the Kinect V1 Sensor in the .NET Framework.
+A WIP Project utilizing the Kinect v1 Sensor in the .NET Framework.
