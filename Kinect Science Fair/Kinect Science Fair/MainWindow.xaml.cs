@@ -1,4 +1,4 @@
-﻿using System; //import neccesary packages
+﻿using System; //import necessary packages
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -52,7 +52,6 @@ namespace Kinect_Science_Fair
 
         const float MaxDepthDistance = 4095; // max value returned
         const float MinDepthDistance = 850; // min value returned
-        const float MaxDepthDistanceOffset = MaxDepthDistance - MinDepthDistance;
 
 
         private void Window_Loaded(object sender, RoutedEventArgs e) //code to be run when window is loaded
@@ -329,7 +328,15 @@ namespace Kinect_Science_Fair
                                 short[] depthDataFarLeft = new short[heightPixel]; //creates a new short with a length of the number of pixels on the line profile
                                 for (y = 0; y < heightPixel; y++) //goes down the line profile
                                 {
-                                        depthDataFarLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width                                    
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataFarLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataFarLeft[y] = UnknownDepthFinder(x, y);
+                                    }
+
                                 }
                                 DataToCSVTraining(depthDataFarLeft); //goes to the DataToCSVTraining to get added to a csv used to train the neural network
                                 break;
@@ -449,6 +456,158 @@ namespace Kinect_Science_Fair
             return mode;
         }
         */
+
+        public short UnknownDepthFinder(int x, int y)
+        {
+            // /*
+            short known = 0;
+            short n = 3; //input number of pixels you want to search for before drawing conclusions / Lower is quicker but less accurate
+
+            List<int> bandDepths = new List<int> { };
+            short bandNum = 1;
+            do
+            {
+                for(int xSearch = -bandNum + x; xSearch < bandNum + x; xSearch++)
+                {
+                    for(int ySearch = -bandNum + y; ySearch < bandNum + y; ySearch++)
+                    {
+                        Console.WriteLine(xSearch + ", " + ySearch);
+                        if((ySearch >= 0 && ySearch <= 479) && (xSearch >= 0 && xSearch <= 639))
+                        {
+                            Console.WriteLine("Waby");
+                            if (depthPixels[xSearch + (ySearch * widthPixel)].IsKnownDepth)
+                            {
+                                Console.WriteLine("Success");
+                                bandDepths.Add(depthPixels[(xSearch) + (ySearch * widthPixel)].Depth);
+                                known++;
+                            }
+                        }
+                    }
+                }
+                bandNum++;
+            } while (known < n && bandNum <= 4); //input number of pixels you want to search for before drawing conclusions / Lower is quicker but less accurate
+            foreach (int i in bandDepths)
+            {
+                Console.Write(i);
+            }
+
+            Console.WriteLine("END");
+            short average;
+            if (bandDepths.Count >= 1)
+            {
+                average = (short)(Convert.ToInt16(bandDepths.Average()));
+            }
+            else
+            {
+                average = 0;
+            }
+            Console.WriteLine("New Value: " + average + " at y = " + y);
+            return average;
+            // */
+
+            /*
+            // The filter collection is used to count the frequency of each
+            // depth value in the filter array. This is used later to determine
+            // the statistical mode for possible assignment to the candidate.
+            short[,] filterCollection = new short[24, 2];
+
+            // The inner and outer band counts are used later to compare against the threshold 
+            // values set in the UI to identify a positive filter result.
+            int innerBandCount = 0;
+            int outerBandCount = 0;
+
+            // The following loops will loop through a 5 X 5 matrix of pixels surrounding the 
+            // candidate pixel. This defines 2 distinct 'bands' around the candidate pixel.
+            // If any of the pixels in this matrix are non-0, we will accumulate them and count
+            // how many non-0 pixels are in each band. If the number of non-0 pixels breaks the
+            // threshold in either band, then the average of all non-0 pixels in the matrix is applied
+            // to the candidate pixel.
+            for (int yi = -4; yi < 5; yi++)
+            {
+                for (int xi = -4; xi < 5; xi++)
+                {
+                    // yi and xi are modifiers that will be subtracted from and added to the
+                    // candidate pixel's x and y coordinates that we calculated earlier. From the
+                    // resulting coordinates, we can calculate the index to be addressed for processing.
+
+                    // We do not want to consider the candidate
+                    // pixel (xi = 0, yi = 0) in our process at this point.
+                    // We already know that it's 0
+                    if (xi != 0 || yi != 0)
+                    {
+                        // We then create our modified coordinates for each pass
+                        var xSearch = x + xi;
+                        var ySearch = y + yi;
+
+                        // While the modified coordinates may in fact calculate out to an actual index, it 
+                        // might not be the one we want. Be sure to check
+                        // to make sure that the modified coordinates
+                        // match up with our image bounds.
+                        if (xSearch >= 0 && xSearch <= 639 && ySearch >= 0 && ySearch <= 479)
+                        {
+                            var index = xSearch + (ySearch * 640);
+                            // We only want to look for non-0 values
+                            if (depthPixels[index].Depth != 0)
+                            {
+                                // We want to find count the frequency of each depth
+                                for (int i = 0; i < 24; i++)
+                                {
+                                    if (filterCollection[i, 0] == depthPixels[index].Depth)
+                                    {
+                                        // When the depth is already in the filter collection
+                                        // we will just increment the frequency.
+                                        filterCollection[i, 1]++;
+                                        break;
+                                    }
+                                    else if (filterCollection[i, 0] == 0)
+                                    {
+                                        // When we encounter a 0 depth in the filter collection
+                                        // this means we have reached the end of values already counted.
+                                        // We will then add the new depth and start it's frequency at 1.
+                                        filterCollection[i, 0] = depthPixels[index].Depth;
+                                        filterCollection[i, 1]++;
+                                        break;
+                                    }
+                                }
+
+                                // We will then determine which band the non-0 pixel
+                                // was found in, and increment the band counters.
+                                if (yi != 2 && yi != -2 && xi != 2 && xi != -2)
+                                    innerBandCount++;
+                                else
+                                    outerBandCount++;
+                            }
+                        }
+                    }
+                }
+            }
+            short depth = 0;
+
+            if (innerBandCount >= 1 || outerBandCount >= 1)
+            {
+                short frequency = 0;
+                
+                // This loop will determine the statistical mode
+                // of the surrounding pixels for assignment to
+                // the candidate.
+                for (int i = 0; i < 24; i++)
+                {
+                    // This means we have reached the end of our
+                    // frequency distribution and can break out of the
+                    // loop to save time.
+                    if (filterCollection[i, 0] == 0)
+                        break;
+                    if (filterCollection[i, 1] > frequency)
+                    {
+                        depth = filterCollection[i, 0];
+                        frequency = filterCollection[i, 1];
+                    }
+                }
+            }
+            Console.WriteLine(depth);
+            return depth;
+            */
+        }
         string target;
         void DataToCSVTraining(short[] depthData)
         {
