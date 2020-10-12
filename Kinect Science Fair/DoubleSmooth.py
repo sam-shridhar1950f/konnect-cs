@@ -14,10 +14,11 @@ def nearestNeighborAfter(i):
             break
     return 7, 0
 
-with open('Depth Data/KinectTest.csv', 'r', newline='') as file:
+with open('Depth Data/KinectData.csv', 'r', newline='') as file:
     reader = csv.reader(file)
+    fileWriter = open("Depth Data/KinectDataDoubleSmoothed.csv", "w")
     for row in reader:
-        row.pop(0) #Remove the target
+        target = row.pop(0) #Remove the target
         row = list(map(int, row))
         wasZero = []
         for i in range(len(row)-1): #Looks down the row
@@ -27,8 +28,7 @@ with open('Depth Data/KinectTest.csv', 'r', newline='') as file:
                 neighborAfterIndex, neighborAfterValue = nearestNeighborAfter(i)
                 threshold = 6 # Max distance between two values' indices
                 if (neighborBeforeIndex + neighborAfterIndex <= threshold and abs(neighborBeforeValue - neighborAfterValue) <= 20):
-                    row[i] = (neighborBeforeValue + neighborAfterValue)/2 #Sets row as average
-        print(row)
-                
-
-            
+                    row[i] = int((neighborBeforeValue + neighborAfterValue)/2) #Sets row as average
+        fileWriter.write(target + ", " + str(row).strip('[]') + "\n")
+    fileWriter.close()
+        
