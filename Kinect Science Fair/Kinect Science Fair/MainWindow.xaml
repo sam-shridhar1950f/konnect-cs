@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kinect_Science_Fair"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1080" Width="1920" Loaded="Window_Loaded" Unloaded="Window_Unloaded">
+        Title="MainWindow" Height="1080" Width="1920" Loaded="Window_Loaded" Unloaded="Window_Unloaded" WindowState="Maximized" WindowStyle="None">
     <Canvas x:Name="mainCanvas" HorizontalAlignment="Left" Height="1080" Margin="0,-25,-8,-6" VerticalAlignment="Top" Width="1920" FlowDirection="LeftToRight">
 
         <Canvas.Background>
@@ -43,6 +43,8 @@
             <ComboBoxItem x:Name="FarLeftUnknownObstacle" Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="FarLeftUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="FarLeftDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="FarLeftWall" Content="Wall"/>
+            <ComboBoxItem x:Name="FarLeftSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="LeftDropdown" Canvas.Left="636" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -51,6 +53,8 @@
             <ComboBoxItem x:Name="LeftUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="LeftUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="LeftDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="LeftWall" Content="Wall"/>
+            <ComboBoxItem x:Name="LeftSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="CloseLeftDropdown" Canvas.Left="773" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -59,6 +63,8 @@
             <ComboBoxItem x:Name="CloseLeftUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="CloseLeftUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="CloseLeftDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="CloseLeftWall" Content="Wall"/>
+            <ComboBoxItem x:Name="CloseLeftSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="CenterDropdown" Canvas.Left="910" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -67,6 +73,8 @@
             <ComboBoxItem x:Name="CenterUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="CenterUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="CenterDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="CenterWall" Content="Wall"/>
+            <ComboBoxItem x:Name="CenterSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="CloseRightDropdown" Canvas.Left="1047" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -75,6 +83,8 @@
             <ComboBoxItem x:Name="CloseRightUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="CloseRightUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="CloseRightDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="CloseRightWall" Content="Wall"/>
+            <ComboBoxItem x:Name="CloseRightSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="RightDropdown" Canvas.Left="1184" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -83,6 +93,8 @@
             <ComboBoxItem x:Name="RightUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="RightUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="RightDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="RightWall" Content="Wall"/>
+            <ComboBoxItem x:Name="RightSideWall" Content="Side Wall"/>
         </ComboBox>
 
         <ComboBox x:Name="FarRightDropdown" Canvas.Left="1321" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -91,6 +103,8 @@
             <ComboBoxItem x:Name="FarRightUnknownObstacle"  Content="Unknown Obstacle"/>
             <ComboBoxItem x:Name="FarRightUpstairs" Content="Upstairs"/>
             <ComboBoxItem x:Name="FarRightDownstairs" Content="Downstairs"/>
+            <ComboBoxItem x:Name="FarRightWall" Content="Wall"/>
+            <ComboBoxItem x:Name="FarRightSideWall" Content="Side Wall"/>
         </ComboBox>
         <Rectangle Fill="Black" Height="500" Canvas.Left="239" Stroke="Black" Canvas.Top="110" Width="3" Opacity="0.5"/>
         <Rectangle Fill="Black" Height="500" Canvas.Left="319" Stroke="Black" Canvas.Top="110" Width="3" Opacity="0.5"/>
@@ -115,6 +129,8 @@
         <Rectangle Fill="Black" Height="10" Canvas.Left="150" Stroke="Black" Canvas.Top="600" Width="660"/>
         <Rectangle Fill="Black" Height="10" Canvas.Left="1110" Stroke="Black" Canvas.Top="600" Width="660"/>
         <Rectangle Fill="Black" Height="10" Canvas.Left="1110" Stroke="Black" Canvas.Top="110" Width="660"/>
+
+        <Rectangle Fill="Black" Height="6" Canvas.Left="380" Stroke="Black" Canvas.Top="813" Width="1200"/>
 
     </Canvas>
 
