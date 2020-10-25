@@ -21,7 +21,7 @@ with open('Depth Data/KinectData.csv', 'r', newline='') as file:
         target = row.pop(0) #Remove the target
         row = list(map(int, row))
         wasZero = []
-        for i in range(len(row)-1): #Looks down the row
+        for i in range(len(row)): #Looks down the row
             if (row[i] == 0):
                 wasZero.append(i)
                 neighborBeforeIndex, neighborBeforeValue = nearestNeighborBefore(i)
