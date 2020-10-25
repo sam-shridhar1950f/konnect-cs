@@ -95,5 +95,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kinect Science FairML.Model\Kinect Science FairML.Model.csproj">
+      <Project>{6FB2204F-4765-4B24-AD65-40D89A1BF1F8}</Project>
+      <Name>Kinect Science FairML.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

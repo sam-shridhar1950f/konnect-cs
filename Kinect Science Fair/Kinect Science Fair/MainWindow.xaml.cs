@@ -16,6 +16,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Kinect; //must be included in references after downloading Kinect 1.8 SDK
+using Kinect_Science_FairML.Model;
+using System.Reflection;
 
 namespace Kinect_Science_Fair
 {
@@ -145,6 +147,7 @@ namespace Kinect_Science_Fair
         //short[] depthData;
         int heightPixel = 480; //sets the height and width of the image as a variable for easier manipulation
         int widthPixel = 640;
+        int frameCounter = 0;
         void kinectSensor_DepthFrameReady(object sender, DepthImageFrameReadyEventArgs e)
         {
             using (DepthImageFrame depthImageFrame = e.OpenDepthImageFrame())
@@ -166,7 +169,13 @@ namespace Kinect_Science_Fair
                     int minDepth = depthImageFrame.MinDepth;
                     int maxDepth = depthImageFrame.MaxDepth;
 
-                    
+                    if (frameCounter == 10)
+                    {
+                        realTimeDataCollection();
+                        frameCounter = 0;
+                    }
+
+                    frameCounter++;
                     // Convert the depth to RGB
                     int colorPixelIndex = 0;
                     for (int i = 0; i < this.depthPixels.Length; ++i)
@@ -708,5 +717,185 @@ namespace Kinect_Science_Fair
             }
         }
 
+        void realTimeDataCollection()
+        {
+            if (kinectSensor != null)
+            {
+                for (x = 80; x < widthPixel; x += 80) //goes across the line profiles by going from 80 , 160, 240, 320, 400, 480, 560
+                {
+                    position = x / 80; //changes postion depending on which line profile is getting scanned down
+                    switch (position) //switch case depending on position to be stored in different short arrays for the line profile
+                    {
+                        case 1:
+                            {
+                                short[] depthDataFarLeft = new short[heightPixel]; //creates a new short with a length of the number of pixels on the line profile
+                                for (y = 0; y < heightPixel; y++) //goes down the line profile
+                                {
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataFarLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataFarLeft[y] = UnknownDepthFinder(x, y);
+                                    }
+
+                                }
+                                float[] depthDataFarLeftMinMax =  realTimeMinMax(depthDataFarLeft);
+                                realTimeFeedback(depthDataFarLeftMinMax); 
+                                break;
+                            }
+                        case 2:
+                            {
+                                short[] depthDataLeft = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataLeftMinMax = realTimeMinMax(depthDataLeft);
+                                realTimeFeedback(depthDataLeftMinMax);
+                                break;
+                            }
+                        case 3:
+                            {
+                                short[] depthDataCloseLeft = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataCloseLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataCloseLeftMinMax = realTimeMinMax(depthDataCloseLeft);
+                                realTimeFeedback(depthDataCloseLeftMinMax);
+                                break;
+                            }
+                        case 4:
+                            {
+                                short[] depthDataCenter = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataCenter[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataCenterMinMax = realTimeMinMax(depthDataCenter);
+                                realTimeFeedback(depthDataCenterMinMax);
+                                break;
+                            }
+                        case 5:
+                            {
+                                short[] depthDataCloseRight = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataCloseRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataCloseRightMinMax = realTimeMinMax(depthDataCloseRight);
+                                realTimeFeedback(depthDataCloseRightMinMax);
+                                break;
+                            }
+                        case 6:
+                            {
+                                short[] depthDataRight = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataRightMinMax = realTimeMinMax(depthDataRight);
+                                realTimeFeedback(depthDataRightMinMax);
+                                break;
+                            }
+                        case 7:
+                            {
+                                short[] depthDataFarRight = new short[heightPixel];
+                                for (y = 0; y < heightPixel; y++)
+                                {
+                                    depthDataFarRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                }
+                                float[] depthDataFarRightMinMax = realTimeMinMax(depthDataFarRight);
+                                realTimeFeedback(depthDataFarRightMinMax);
+                                break;
+                            }
+                    }
+                }
+            }
+          
+        }
+        float[] realTimeMinMax(short[] depthData)
+        {
+            float max = depthData.Max();
+            float min = 999999;
+            foreach(short i in depthData)
+            {
+                if (min > i && i > 0)
+                {
+                    min = i;
+                }
+            }
+            float[] depthDataMinMax = new float[heightPixel];
+            for (int i = 0; i < 480; i++)
+            {
+                if (depthData[i] != 0)
+                {
+                    depthDataMinMax[i] = (depthData[i] - min) / (max - min);
+                }
+            }
+            return depthDataMinMax;
+        }
+        string realTimeFeedback(float[] depthDataMinMaxParam)
+        {
+            // Add input data
+            var input = new ModelInput();
+            PropertyInfo[] properties = typeof(ModelInput).GetProperties();
+            
+            
+            for (int i = 1; i < 481; i++)
+            {
+                Console.WriteLine(properties[i]);
+                properties[i].SetValue(input, depthDataMinMaxParam[i-1]);
+            }
+            // Load model and predict output of sample data
+            ModelOutput result = ConsumeModel.Predict(input);
+            string prediction = result.ToString();
+            return prediction;
+        }
+
+        void feedbackDisplay(string prediction)
+        {
+            switch (position) //switch case using the position num to determine what the actual object is for the position when the export to csv is clicked. Used to train Neural Network
+            {
+                //postion orders are reversed because kinect registers a reversed image that was flipped on the application to better reflect what was being shown
+                case 7:
+                    {
+                        FarLeftStatusLabel.Text = prediction;
+                        break; //breaks the switch case
+                    }
+                case 6:
+                    {
+                        LeftStatusLabel.Text = prediction;
+                        break;
+                    }
+                case 5:
+                    {
+                        CloseLeftStatusLabel.Text = prediction;
+                        break;
+                    }
+                case 4:
+                    {
+                        CenterStatusLabel.Text = prediction;
+                        break;
+                    }
+                case 3:
+                    {
+                        CloseRightStatusLabel.Text = prediction;
+                        break;
+                    }
+                case 2:
+                    {
+                        RightStatusLabel.Text = prediction;
+                        break;
+                    }
+                case 1:
+                    {
+                        FarRightStatusLabel.Text = prediction;
+                        break;
+                    }
+            }
+        }
     }
 }
