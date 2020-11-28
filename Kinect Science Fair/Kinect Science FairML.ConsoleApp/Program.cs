@@ -12,973 +12,973 @@ namespace Kinect_Science_FairML.ConsoleApp
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
-                Col1 = 0F,
-                Col2 = 1F,
-                Col3 = 2F,
-                Col4 = 3F,
-                Col5 = 4F,
-                Col6 = 5F,
-                Col7 = 6F,
-                Col8 = 7F,
-                Col9 = 8F,
-                Col10 = 9F,
-                Col11 = 10F,
-                Col12 = 11F,
-                Col13 = 12F,
-                Col14 = 13F,
-                Col15 = 14F,
-                Col16 = 15F,
-                Col17 = 16F,
-                Col18 = 17F,
-                Col19 = 18F,
-                Col20 = 19F,
-                Col21 = 20F,
-                Col22 = 21F,
-                Col23 = 22F,
-                Col24 = 23F,
-                Col25 = 24F,
-                Col26 = 25F,
-                Col27 = 26F,
-                Col28 = 27F,
-                Col29 = 28F,
-                Col30 = 29F,
-                Col31 = 30F,
-                Col32 = 31F,
-                Col33 = 32F,
-                Col34 = 33F,
-                Col35 = 34F,
-                Col36 = 35F,
-                Col37 = 36F,
-                Col38 = 37F,
-                Col39 = 38F,
-                Col40 = 39F,
-                Col41 = 40F,
-                Col42 = 41F,
-                Col43 = 42F,
-                Col44 = 43F,
-                Col45 = 44F,
-                Col46 = 45F,
-                Col47 = 46F,
-                Col48 = 47F,
-                Col49 = 48F,
-                Col50 = 49F,
-                Col51 = 50F,
-                Col52 = 51F,
-                Col53 = 52F,
-                Col54 = 53F,
-                Col55 = 54F,
-                Col56 = 55F,
-                Col57 = 56F,
-                Col58 = 57F,
-                Col59 = 58F,
-                Col60 = 59F,
-                Col61 = 60F,
-                Col62 = 61F,
-                Col63 = 62F,
-                Col64 = 63F,
-                Col65 = 64F,
-                Col66 = 65F,
-                Col67 = 66F,
-                Col68 = 67F,
-                Col69 = 68F,
-                Col70 = 69F,
-                Col71 = 70F,
-                Col72 = 71F,
-                Col73 = 72F,
-                Col74 = 73F,
-                Col75 = 74F,
-                Col76 = 75F,
-                Col77 = 76F,
-                Col78 = 77F,
-                Col79 = 78F,
-                Col80 = 79F,
-                Col81 = 80F,
-                Col82 = 81F,
-                Col83 = 82F,
-                Col84 = 83F,
-                Col85 = 84F,
-                Col86 = 85F,
-                Col87 = 86F,
-                Col88 = 87F,
-                Col89 = 88F,
-                Col90 = 89F,
-                Col91 = 90F,
-                Col92 = 91F,
-                Col93 = 92F,
-                Col94 = 93F,
-                Col95 = 94F,
-                Col96 = 95F,
-                Col97 = 96F,
-                Col98 = 97F,
-                Col99 = 98F,
-                Col100 = 99F,
-                Col101 = 100F,
-                Col102 = 101F,
-                Col103 = 102F,
-                Col104 = 103F,
-                Col105 = 104F,
-                Col106 = 105F,
-                Col107 = 106F,
-                Col108 = 107F,
-                Col109 = 108F,
-                Col110 = 109F,
-                Col111 = 110F,
-                Col112 = 111F,
-                Col113 = 112F,
-                Col114 = 113F,
-                Col115 = 114F,
-                Col116 = 115F,
-                Col117 = 116F,
-                Col118 = 117F,
-                Col119 = 118F,
-                Col120 = 119F,
-                Col121 = 120F,
-                Col122 = 121F,
-                Col123 = 122F,
-                Col124 = 123F,
-                Col125 = 124F,
-                Col126 = 125F,
-                Col127 = 126F,
-                Col128 = 127F,
-                Col129 = 128F,
-                Col130 = 129F,
-                Col131 = 130F,
-                Col132 = 131F,
-                Col133 = 132F,
-                Col134 = 133F,
-                Col135 = 134F,
-                Col136 = 135F,
-                Col137 = 136F,
-                Col138 = 137F,
-                Col139 = 138F,
-                Col140 = 139F,
-                Col141 = 140F,
-                Col142 = 141F,
-                Col143 = 142F,
-                Col144 = 143F,
-                Col145 = 144F,
-                Col146 = 145F,
-                Col147 = 146F,
-                Col148 = 147F,
-                Col149 = 148F,
-                Col150 = 149F,
-                Col151 = 150F,
-                Col152 = 151F,
-                Col153 = 152F,
-                Col154 = 153F,
-                Col155 = 154F,
-                Col156 = 155F,
-                Col157 = 156F,
-                Col158 = 157F,
-                Col159 = 158F,
-                Col160 = 159F,
-                Col161 = 160F,
-                Col162 = 161F,
-                Col163 = 162F,
-                Col164 = 163F,
-                Col165 = 164F,
-                Col166 = 165F,
-                Col167 = 166F,
-                Col168 = 167F,
-                Col169 = 168F,
-                Col170 = 169F,
-                Col171 = 170F,
-                Col172 = 171F,
-                Col173 = 172F,
-                Col174 = 173F,
-                Col175 = 174F,
-                Col176 = 175F,
-                Col177 = 176F,
-                Col178 = 177F,
-                Col179 = 178F,
-                Col180 = 179F,
-                Col181 = 180F,
-                Col182 = 181F,
-                Col183 = 182F,
-                Col184 = 183F,
-                Col185 = 184F,
-                Col186 = 185F,
-                Col187 = 186F,
-                Col188 = 187F,
-                Col189 = 188F,
-                Col190 = 189F,
-                Col191 = 190F,
-                Col192 = 191F,
-                Col193 = 192F,
-                Col194 = 193F,
-                Col195 = 194F,
-                Col196 = 195F,
-                Col197 = 196F,
-                Col198 = 197F,
-                Col199 = 198F,
-                Col200 = 199F,
-                Col201 = 200F,
-                Col202 = 201F,
-                Col203 = 202F,
-                Col204 = 203F,
-                Col205 = 204F,
-                Col206 = 205F,
-                Col207 = 206F,
-                Col208 = 207F,
-                Col209 = 208F,
-                Col210 = 209F,
-                Col211 = 210F,
-                Col212 = 211F,
-                Col213 = 212F,
-                Col214 = 213F,
-                Col215 = 214F,
-                Col216 = 215F,
-                Col217 = 216F,
-                Col218 = 217F,
-                Col219 = 218F,
-                Col220 = 219F,
-                Col221 = 220F,
-                Col222 = 221F,
-                Col223 = 222F,
-                Col224 = 223F,
-                Col225 = 224F,
-                Col226 = 225F,
-                Col227 = 226F,
-                Col228 = 227F,
-                Col229 = 228F,
-                Col230 = 229F,
-                Col231 = 230F,
-                Col232 = 231F,
-                Col233 = 232F,
-                Col234 = 233F,
-                Col235 = 234F,
-                Col236 = 235F,
-                Col237 = 236F,
-                Col238 = 237F,
-                Col239 = 238F,
-                Col240 = 239F,
-                Col241 = 240F,
-                Col242 = 241F,
-                Col243 = 242F,
-                Col244 = 243F,
-                Col245 = 244F,
-                Col246 = 245F,
-                Col247 = 246F,
-                Col248 = 247F,
-                Col249 = 248F,
-                Col250 = 249F,
-                Col251 = 250F,
-                Col252 = 251F,
-                Col253 = 252F,
-                Col254 = 253F,
-                Col255 = 254F,
-                Col256 = 255F,
-                Col257 = 256F,
-                Col258 = 257F,
-                Col259 = 258F,
-                Col260 = 259F,
-                Col261 = 260F,
-                Col262 = 261F,
-                Col263 = 262F,
-                Col264 = 263F,
-                Col265 = 264F,
-                Col266 = 265F,
-                Col267 = 266F,
-                Col268 = 267F,
-                Col269 = 268F,
-                Col270 = 269F,
-                Col271 = 270F,
-                Col272 = 271F,
-                Col273 = 272F,
-                Col274 = 273F,
-                Col275 = 274F,
-                Col276 = 275F,
-                Col277 = 276F,
-                Col278 = 277F,
-                Col279 = 278F,
-                Col280 = 279F,
-                Col281 = 280F,
-                Col282 = 281F,
-                Col283 = 282F,
-                Col284 = 283F,
-                Col285 = 284F,
-                Col286 = 285F,
-                Col287 = 286F,
-                Col288 = 287F,
-                Col289 = 288F,
-                Col290 = 289F,
-                Col291 = 290F,
-                Col292 = 291F,
-                Col293 = 292F,
-                Col294 = 293F,
-                Col295 = 294F,
-                Col296 = 295F,
-                Col297 = 296F,
-                Col298 = 297F,
-                Col299 = 298F,
-                Col300 = 299F,
-                Col301 = 300F,
-                Col302 = 301F,
-                Col303 = 302F,
-                Col304 = 303F,
-                Col305 = 304F,
-                Col306 = 305F,
-                Col307 = 306F,
-                Col308 = 307F,
-                Col309 = 308F,
-                Col310 = 309F,
-                Col311 = 310F,
-                Col312 = 311F,
-                Col313 = 312F,
-                Col314 = 313F,
-                Col315 = 314F,
-                Col316 = 315F,
-                Col317 = 316F,
-                Col318 = 317F,
-                Col319 = 318F,
-                Col320 = 319F,
-                Col321 = 320F,
-                Col322 = 321F,
-                Col323 = 322F,
-                Col324 = 323F,
-                Col325 = 324F,
-                Col326 = 325F,
-                Col327 = 326F,
-                Col328 = 327F,
-                Col329 = 328F,
-                Col330 = 329F,
-                Col331 = 330F,
-                Col332 = 331F,
-                Col333 = 332F,
-                Col334 = 333F,
-                Col335 = 334F,
-                Col336 = 335F,
-                Col337 = 336F,
-                Col338 = 337F,
-                Col339 = 338F,
-                Col340 = 339F,
-                Col341 = 340F,
-                Col342 = 341F,
-                Col343 = 342F,
-                Col344 = 343F,
-                Col345 = 344F,
-                Col346 = 345F,
-                Col347 = 346F,
-                Col348 = 347F,
-                Col349 = 348F,
-                Col350 = 349F,
-                Col351 = 350F,
-                Col352 = 351F,
-                Col353 = 352F,
-                Col354 = 353F,
-                Col355 = 354F,
-                Col356 = 355F,
-                Col357 = 356F,
-                Col358 = 357F,
-                Col359 = 358F,
-                Col360 = 359F,
-                Col361 = 360F,
-                Col362 = 361F,
-                Col363 = 362F,
-                Col364 = 363F,
-                Col365 = 364F,
-                Col366 = 365F,
-                Col367 = 366F,
-                Col368 = 367F,
-                Col369 = 368F,
-                Col370 = 369F,
-                Col371 = 370F,
-                Col372 = 371F,
-                Col373 = 372F,
-                Col374 = 373F,
-                Col375 = 374F,
-                Col376 = 375F,
-                Col377 = 376F,
-                Col378 = 377F,
-                Col379 = 378F,
-                Col380 = 379F,
-                Col381 = 380F,
-                Col382 = 381F,
-                Col383 = 382F,
-                Col384 = 383F,
-                Col385 = 384F,
-                Col386 = 385F,
-                Col387 = 386F,
-                Col388 = 387F,
-                Col389 = 388F,
-                Col390 = 389F,
-                Col391 = 390F,
-                Col392 = 391F,
-                Col393 = 392F,
-                Col394 = 393F,
-                Col395 = 394F,
-                Col396 = 395F,
-                Col397 = 396F,
-                Col398 = 397F,
-                Col399 = 398F,
-                Col400 = 399F,
-                Col401 = 400F,
-                Col402 = 401F,
-                Col403 = 402F,
-                Col404 = 403F,
-                Col405 = 404F,
-                Col406 = 405F,
-                Col407 = 406F,
-                Col408 = 407F,
-                Col409 = 408F,
-                Col410 = 409F,
-                Col411 = 410F,
-                Col412 = 411F,
-                Col413 = 412F,
-                Col414 = 413F,
-                Col415 = 414F,
-                Col416 = 415F,
-                Col417 = 416F,
-                Col418 = 417F,
-                Col419 = 418F,
-                Col420 = 419F,
-                Col421 = 420F,
-                Col422 = 421F,
-                Col423 = 422F,
-                Col424 = 423F,
-                Col425 = 424F,
-                Col426 = 425F,
-                Col427 = 426F,
-                Col428 = 427F,
-                Col429 = 428F,
-                Col430 = 429F,
-                Col431 = 430F,
-                Col432 = 431F,
-                Col433 = 432F,
-                Col434 = 433F,
-                Col435 = 434F,
-                Col436 = 435F,
-                Col437 = 436F,
-                Col438 = 437F,
-                Col439 = 438F,
-                Col440 = 439F,
-                Col441 = 440F,
-                Col442 = 441F,
-                Col443 = 442F,
-                Col444 = 443F,
-                Col445 = 444F,
-                Col446 = 445F,
-                Col447 = 446F,
-                Col448 = 447F,
-                Col449 = 448F,
-                Col450 = 449F,
-                Col451 = 450F,
-                Col452 = 451F,
-                Col453 = 452F,
-                Col454 = 453F,
-                Col455 = 454F,
-                Col456 = 455F,
-                Col457 = 456F,
-                Col458 = 457F,
-                Col459 = 458F,
-                Col460 = 459F,
-                Col461 = 460F,
-                Col462 = 461F,
-                Col463 = 462F,
-                Col464 = 463F,
-                Col465 = 464F,
-                Col466 = 465F,
-                Col467 = 466F,
-                Col468 = 467F,
-                Col469 = 468F,
-                Col470 = 469F,
-                Col471 = 470F,
-                Col472 = 471F,
-                Col473 = 472F,
-                Col474 = 473F,
-                Col475 = 474F,
-                Col476 = 475F,
-                Col477 = 476F,
-                Col478 = 477F,
-                Col479 = 478F,
-                Col480 = 479F,
+                _0 = 0.82F,
+                _1 = 0.86F,
+                _2 = 0.86F,
+                _3 = 0.9F,
+                _4 = 0.9F,
+                _5 = 0.9F,
+                _6 = 0.92F,
+                _7 = 0.96F,
+                _8 = 0.96F,
+                _9 = 1F,
+                _10 = 1F,
+                _11 = 0.96F,
+                _12 = 1F,
+                _13 = 0.96F,
+                _14 = 0.96F,
+                _15 = 0.92F,
+                _16 = 0.96F,
+                _17 = 0.92F,
+                _18 = 0.92F,
+                _19 = 0.96F,
+                _20 = 0.92F,
+                _21 = 0.92F,
+                _22 = 0.92F,
+                _23 = 0.92F,
+                _24 = 0.9F,
+                _25 = 0.9F,
+                _26 = 0.86F,
+                _27 = 0.86F,
+                _28 = 0.86F,
+                _29 = 0.9F,
+                _30 = 0.9F,
+                _31 = 0.9F,
+                _32 = 0.9F,
+                _33 = 0.92F,
+                _34 = 0.96F,
+                _35 = 0.96F,
+                _36 = 0.92F,
+                _37 = 0.86F,
+                _38 = 0.82F,
+                _39 = 0.86F,
+                _40 = 0.86F,
+                _41 = 0.9F,
+                _42 = 0.86F,
+                _43 = 0.82F,
+                _44 = 0.86F,
+                _45 = 0.92F,
+                _46 = 0.92F,
+                _47 = 0.9F,
+                _48 = 0.86F,
+                _49 = 0.86F,
+                _50 = 0.9F,
+                _51 = 0.9F,
+                _52 = 0.9F,
+                _53 = 0.86F,
+                _54 = 0.86F,
+                _55 = 0.86F,
+                _56 = 0.9F,
+                _57 = 0.92F,
+                _58 = 0.92F,
+                _59 = 0.92F,
+                _60 = 0.9F,
+                _61 = 0.86F,
+                _62 = 0.9F,
+                _63 = 0.9F,
+                _64 = 0.9F,
+                _65 = 0.86F,
+                _66 = 0.86F,
+                _67 = 0.86F,
+                _68 = 0.86F,
+                _69 = 0.86F,
+                _70 = 0.86F,
+                _71 = 0.86F,
+                _72 = 0.86F,
+                _73 = 0.86F,
+                _74 = 0.86F,
+                _75 = 0.86F,
+                _76 = 0.86F,
+                _77 = 0.82F,
+                _78 = 0.86F,
+                _79 = 0.86F,
+                _80 = 0.86F,
+                _81 = 0.86F,
+                _82 = 0.9F,
+                _83 = 0.9F,
+                _84 = 0.9F,
+                _85 = 0.9F,
+                _86 = 0.92F,
+                _87 = 0.92F,
+                _88 = 0.9F,
+                _89 = 0.9F,
+                _90 = 0.9F,
+                _91 = 0.9F,
+                _92 = 0.9F,
+                _93 = 0.9F,
+                _94 = 0.86F,
+                _95 = 0.86F,
+                _96 = 0.86F,
+                _97 = 0.86F,
+                _98 = 0.86F,
+                _99 = 0.9F,
+                _100 = 0.86F,
+                _101 = 0.86F,
+                _102 = 0.86F,
+                _103 = 0.9F,
+                _104 = 0.9F,
+                _105 = 0.9F,
+                _106 = 0.9F,
+                _107 = 0.86F,
+                _108 = 0.9F,
+                _109 = 0.86F,
+                _110 = 0.86F,
+                _111 = 0.86F,
+                _112 = 0.82F,
+                _113 = 0.82F,
+                _114 = 0.82F,
+                _115 = 0.82F,
+                _116 = 0.82F,
+                _117 = 0.82F,
+                _118 = 0.82F,
+                _119 = 0.82F,
+                _120 = 0.86F,
+                _121 = 0.86F,
+                _122 = 0.86F,
+                _123 = 0.86F,
+                _124 = 0.9F,
+                _125 = 0.9F,
+                _126 = 0.9F,
+                _127 = 0.92F,
+                _128 = 0.92F,
+                _129 = 0.92F,
+                _130 = 0.96F,
+                _131 = 0.96F,
+                _132 = 0.96F,
+                _133 = 0.96F,
+                _134 = 0.96F,
+                _135 = 0.96F,
+                _136 = 0.96F,
+                _137 = 0.96F,
+                _138 = 0.96F,
+                _139 = 0.96F,
+                _140 = 0.96F,
+                _141 = 0.96F,
+                _142 = 0.92F,
+                _143 = 0.92F,
+                _144 = 0.92F,
+                _145 = 0.9F,
+                _146 = 0.86F,
+                _147 = 0.82F,
+                _148 = 0.86F,
+                _149 = 0.9F,
+                _150 = 0.86F,
+                _151 = 0.86F,
+                _152 = 0.82F,
+                _153 = 0.82F,
+                _154 = 0.86F,
+                _155 = 0.86F,
+                _156 = 0.86F,
+                _157 = 0.82F,
+                _158 = 0.82F,
+                _159 = 0.82F,
+                _160 = 0.86F,
+                _161 = 0.86F,
+                _162 = 0.86F,
+                _163 = 0.82F,
+                _164 = 0.86F,
+                _165 = 0.86F,
+                _166 = 0.9F,
+                _167 = 0.86F,
+                _168 = 0.86F,
+                _169 = 0.86F,
+                _170 = 0.9F,
+                _171 = 0.92F,
+                _172 = 0.96F,
+                _173 = 0.96F,
+                _174 = 0.96F,
+                _175 = 0.92F,
+                _176 = 0.92F,
+                _177 = 0.92F,
+                _178 = 0.9F,
+                _179 = 0.86F,
+                _180 = 0.86F,
+                _181 = 0.86F,
+                _182 = 0.86F,
+                _183 = 0.86F,
+                _184 = 0.86F,
+                _185 = 0.86F,
+                _186 = 0.82F,
+                _187 = 0.82F,
+                _188 = 0.82F,
+                _189 = 0.82F,
+                _190 = 0.86F,
+                _191 = 0.86F,
+                _192 = 0.86F,
+                _193 = 0.86F,
+                _194 = 0.86F,
+                _195 = 0.9F,
+                _196 = 0.86F,
+                _197 = 0.86F,
+                _198 = 0.86F,
+                _199 = 0.86F,
+                _200 = 0.86F,
+                _201 = 0.86F,
+                _202 = 0.86F,
+                _203 = 0.86F,
+                _204 = 0.86F,
+                _205 = 0.82F,
+                _206 = 0.82F,
+                _207 = 0.8F,
+                _208 = 0.8F,
+                _209 = 0.8F,
+                _210 = 0.8F,
+                _211 = 0.76F,
+                _212 = 0.72F,
+                _213 = 0.66F,
+                _214 = 0.62F,
+                _215 = 0.62F,
+                _216 = 0.62F,
+                _217 = 0.6F,
+                _218 = 0.56F,
+                _219 = 0.16F,
+                _220 = 0.16F,
+                _221 = 0.16F,
+                _222 = 0.16F,
+                _223 = 0.18F,
+                _224 = 0.18F,
+                _225 = 0.16F,
+                _226 = 0.12F,
+                _227 = 0.12F,
+                _228 = 0.04F,
+                _229 = 0.04F,
+                _230 = 0.04F,
+                _231 = 0.04F,
+                _232 = 0F,
+                _233 = 0.04F,
+                _234 = 0.28F,
+                _235 = 0.32F,
+                _236 = 0.34F,
+                _237 = 0.34F,
+                _238 = 0.38F,
+                _239 = 0.38F,
+                _240 = 0.38F,
+                _241 = 0.38F,
+                _242 = 0.4F,
+                _243 = 0.4F,
+                _244 = 0.4F,
+                _245 = 0.44F,
+                _246 = 0.44F,
+                _247 = 0.4F,
+                _248 = 0.4F,
+                _249 = 0.4F,
+                _250 = 0.38F,
+                _251 = 0.38F,
+                _252 = 0.38F,
+                _253 = 0.34F,
+                _254 = 0.38F,
+                _255 = 0.38F,
+                _256 = 0.4F,
+                _257 = 0.38F,
+                _258 = 0.38F,
+                _259 = 0.38F,
+                _260 = 0.38F,
+                _261 = 0.34F,
+                _262 = 0.32F,
+                _263 = 0.28F,
+                _264 = 0.72F,
+                _265 = 0.72F,
+                _266 = 0.76F,
+                _267 = 0.76F,
+                _268 = 0.76F,
+                _269 = 0.8F,
+                _270 = 0.8F,
+                _271 = 0.8F,
+                _272 = 0.8F,
+                _273 = 0.8F,
+                _274 = 0.76F,
+                _275 = 0.76F,
+                _276 = 0.8F,
+                _277 = 0.8F,
+                _278 = 0.8F,
+                _279 = 0.82F,
+                _280 = 0.82F,
+                _281 = 0.82F,
+                _282 = 0.82F,
+                _283 = 0.82F,
+                _284 = 0.8F,
+                _285 = 0.8F,
+                _286 = 0.8F,
+                _287 = 0.8F,
+                _288 = 0.8F,
+                _289 = 0.8F,
+                _290 = 0.8F,
+                _291 = 0.8F,
+                _292 = 0.82F,
+                _293 = 0.82F,
+                _294 = 0.82F,
+                _295 = 0.8F,
+                _296 = 0.8F,
+                _297 = 0.76F,
+                _298 = 0.76F,
+                _299 = 0.76F,
+                _300 = 0.72F,
+                _301 = 0.72F,
+                _302 = 0.72F,
+                _303 = 0.72F,
+                _304 = 0.72F,
+                _305 = 0.72F,
+                _306 = 0.72F,
+                _307 = 0.72F,
+                _308 = 0.72F,
+                _309 = 0.72F,
+                _310 = 0.7F,
+                _311 = 0.7F,
+                _312 = 0.72F,
+                _313 = 0.72F,
+                _314 = 0.72F,
+                _315 = 0.72F,
+                _316 = 0.72F,
+                _317 = 0.72F,
+                _318 = 0.7F,
+                _319 = 0.7F,
+                _320 = 0.7F,
+                _321 = 0.7F,
+                _322 = 0.7F,
+                _323 = 0.7F,
+                _324 = 0.72F,
+                _325 = 0.76F,
+                _326 = 0.76F,
+                _327 = 0.76F,
+                _328 = 0.76F,
+                _329 = 0.72F,
+                _330 = 0.72F,
+                _331 = 0.72F,
+                _332 = 0.72F,
+                _333 = 0.72F,
+                _334 = 0.72F,
+                _335 = 0.76F,
+                _336 = 0.72F,
+                _337 = 0.72F,
+                _338 = 0.72F,
+                _339 = 0.72F,
+                _340 = 0.7F,
+                _341 = 0.7F,
+                _342 = 0.7F,
+                _343 = 0.7F,
+                _344 = 0.7F,
+                _345 = 0.7F,
+                _346 = 0.7F,
+                _347 = 0.7F,
+                _348 = 0.7F,
+                _349 = 0.7F,
+                _350 = 0.7F,
+                _351 = 0.66F,
+                _352 = 0.66F,
+                _353 = 0.7F,
+                _354 = 0.7F,
+                _355 = 0.66F,
+                _356 = 0.66F,
+                _357 = 0.66F,
+                _358 = 0.66F,
+                _359 = 0.62F,
+                _360 = 0.62F,
+                _361 = 0.66F,
+                _362 = 0.66F,
+                _363 = 0.66F,
+                _364 = 0.7F,
+                _365 = 0.66F,
+                _366 = 0.7F,
+                _367 = 0.7F,
+                _368 = 0.7F,
+                _369 = 0.66F,
+                _370 = 0.66F,
+                _371 = 0.66F,
+                _372 = 0.66F,
+                _373 = 0.66F,
+                _374 = 0.62F,
+                _375 = 0.62F,
+                _376 = 0.62F,
+                _377 = 0.62F,
+                _378 = 0.62F,
+                _379 = 0.62F,
+                _380 = 0.62F,
+                _381 = 0.62F,
+                _382 = 0.62F,
+                _383 = 0.66F,
+                _384 = 0.66F,
+                _385 = 0.7F,
+                _386 = 0.7F,
+                _387 = 0.7F,
+                _388 = 0.66F,
+                _389 = 0.62F,
+                _390 = 0.66F,
+                _391 = 0.6F,
+                _392 = 0.6F,
+                _393 = 0.62F,
+                _394 = 0.56F,
+                _395 = 0.6F,
+                _396 = 0.6F,
+                _397 = 0.6F,
+                _398 = 0.62F,
+                _399 = 0.62F,
+                _400 = 0.62F,
+                _401 = 0.6F,
+                _402 = 0.62F,
+                _403 = 0.6F,
+                _404 = 0.62F,
+                _405 = 0.66F,
+                _406 = 0.7F,
+                _407 = 0.72F,
+                _408 = 0.7F,
+                _409 = 0.7F,
+                _410 = 0.62F,
+                _411 = 0.7F,
+                _412 = 0.66F,
+                _413 = 0.66F,
+                _414 = 0.62F,
+                _415 = 0.62F,
+                _416 = 0.62F,
+                _417 = 0.62F,
+                _418 = 0.62F,
+                _419 = 0.62F,
+                _420 = 0.6F,
+                _421 = 0.62F,
+                _422 = 0.62F,
+                _423 = 0.62F,
+                _424 = 0.6F,
+                _425 = 0.6F,
+                _426 = 0.62F,
+                _427 = 0.6F,
+                _428 = 0.6F,
+                _429 = 0.6F,
+                _430 = 0.6F,
+                _431 = 0.62F,
+                _432 = 0.6F,
+                _433 = 0.62F,
+                _434 = 0.66F,
+                _435 = 0.66F,
+                _436 = 0.6F,
+                _437 = 0.6F,
+                _438 = 0.56F,
+                _439 = 0.6F,
+                _440 = 0.56F,
+                _441 = 0.54F,
+                _442 = 0.54F,
+                _443 = 0.54F,
+                _444 = 0.54F,
+                _445 = 0.56F,
+                _446 = 0.56F,
+                _447 = 0.56F,
+                _448 = 0.54F,
+                _449 = 0.54F,
+                _450 = 0.54F,
+                _451 = 0.54F,
+                _452 = 0.56F,
+                _453 = 0.56F,
+                _454 = 0.56F,
+                _455 = 0.56F,
+                _456 = 0.6F,
+                _457 = 0.6F,
+                _458 = 0.6F,
+                _459 = 0.56F,
+                _460 = 0.56F,
+                _461 = 0.56F,
+                _462 = 0.56F,
+                _463 = 0.54F,
+                _464 = 0.54F,
+                _465 = 0.56F,
+                _466 = 0.54F,
+                _467 = 0.54F,
+                _468 = 0.54F,
+                _469 = 0.54F,
+                _470 = 0.56F,
+                _471 = 0.56F,
+                _472 = 0.56F,
+                _473 = 0.56F,
+                _474 = 0.54F,
+                _475 = 0.54F,
+                _476 = 0.54F,
+                _477 = 0.54F,
+                _478 = 0.54F,
+                _479 = 0.5F,
             };
 
             // Make a single prediction on the sample data and print results
             var predictionResult = ConsumeModel.Predict(sampleData);
 
-            Console.WriteLine("Using model to make single prediction -- Comparing actual Col0 with predicted Col0 from sample data...\n\n");
-            Console.WriteLine($"Col1: {sampleData.Col1}");
-            Console.WriteLine($"Col2: {sampleData.Col2}");
-            Console.WriteLine($"Col3: {sampleData.Col3}");
-            Console.WriteLine($"Col4: {sampleData.Col4}");
-            Console.WriteLine($"Col5: {sampleData.Col5}");
-            Console.WriteLine($"Col6: {sampleData.Col6}");
-            Console.WriteLine($"Col7: {sampleData.Col7}");
-            Console.WriteLine($"Col8: {sampleData.Col8}");
-            Console.WriteLine($"Col9: {sampleData.Col9}");
-            Console.WriteLine($"Col10: {sampleData.Col10}");
-            Console.WriteLine($"Col11: {sampleData.Col11}");
-            Console.WriteLine($"Col12: {sampleData.Col12}");
-            Console.WriteLine($"Col13: {sampleData.Col13}");
-            Console.WriteLine($"Col14: {sampleData.Col14}");
-            Console.WriteLine($"Col15: {sampleData.Col15}");
-            Console.WriteLine($"Col16: {sampleData.Col16}");
-            Console.WriteLine($"Col17: {sampleData.Col17}");
-            Console.WriteLine($"Col18: {sampleData.Col18}");
-            Console.WriteLine($"Col19: {sampleData.Col19}");
-            Console.WriteLine($"Col20: {sampleData.Col20}");
-            Console.WriteLine($"Col21: {sampleData.Col21}");
-            Console.WriteLine($"Col22: {sampleData.Col22}");
-            Console.WriteLine($"Col23: {sampleData.Col23}");
-            Console.WriteLine($"Col24: {sampleData.Col24}");
-            Console.WriteLine($"Col25: {sampleData.Col25}");
-            Console.WriteLine($"Col26: {sampleData.Col26}");
-            Console.WriteLine($"Col27: {sampleData.Col27}");
-            Console.WriteLine($"Col28: {sampleData.Col28}");
-            Console.WriteLine($"Col29: {sampleData.Col29}");
-            Console.WriteLine($"Col30: {sampleData.Col30}");
-            Console.WriteLine($"Col31: {sampleData.Col31}");
-            Console.WriteLine($"Col32: {sampleData.Col32}");
-            Console.WriteLine($"Col33: {sampleData.Col33}");
-            Console.WriteLine($"Col34: {sampleData.Col34}");
-            Console.WriteLine($"Col35: {sampleData.Col35}");
-            Console.WriteLine($"Col36: {sampleData.Col36}");
-            Console.WriteLine($"Col37: {sampleData.Col37}");
-            Console.WriteLine($"Col38: {sampleData.Col38}");
-            Console.WriteLine($"Col39: {sampleData.Col39}");
-            Console.WriteLine($"Col40: {sampleData.Col40}");
-            Console.WriteLine($"Col41: {sampleData.Col41}");
-            Console.WriteLine($"Col42: {sampleData.Col42}");
-            Console.WriteLine($"Col43: {sampleData.Col43}");
-            Console.WriteLine($"Col44: {sampleData.Col44}");
-            Console.WriteLine($"Col45: {sampleData.Col45}");
-            Console.WriteLine($"Col46: {sampleData.Col46}");
-            Console.WriteLine($"Col47: {sampleData.Col47}");
-            Console.WriteLine($"Col48: {sampleData.Col48}");
-            Console.WriteLine($"Col49: {sampleData.Col49}");
-            Console.WriteLine($"Col50: {sampleData.Col50}");
-            Console.WriteLine($"Col51: {sampleData.Col51}");
-            Console.WriteLine($"Col52: {sampleData.Col52}");
-            Console.WriteLine($"Col53: {sampleData.Col53}");
-            Console.WriteLine($"Col54: {sampleData.Col54}");
-            Console.WriteLine($"Col55: {sampleData.Col55}");
-            Console.WriteLine($"Col56: {sampleData.Col56}");
-            Console.WriteLine($"Col57: {sampleData.Col57}");
-            Console.WriteLine($"Col58: {sampleData.Col58}");
-            Console.WriteLine($"Col59: {sampleData.Col59}");
-            Console.WriteLine($"Col60: {sampleData.Col60}");
-            Console.WriteLine($"Col61: {sampleData.Col61}");
-            Console.WriteLine($"Col62: {sampleData.Col62}");
-            Console.WriteLine($"Col63: {sampleData.Col63}");
-            Console.WriteLine($"Col64: {sampleData.Col64}");
-            Console.WriteLine($"Col65: {sampleData.Col65}");
-            Console.WriteLine($"Col66: {sampleData.Col66}");
-            Console.WriteLine($"Col67: {sampleData.Col67}");
-            Console.WriteLine($"Col68: {sampleData.Col68}");
-            Console.WriteLine($"Col69: {sampleData.Col69}");
-            Console.WriteLine($"Col70: {sampleData.Col70}");
-            Console.WriteLine($"Col71: {sampleData.Col71}");
-            Console.WriteLine($"Col72: {sampleData.Col72}");
-            Console.WriteLine($"Col73: {sampleData.Col73}");
-            Console.WriteLine($"Col74: {sampleData.Col74}");
-            Console.WriteLine($"Col75: {sampleData.Col75}");
-            Console.WriteLine($"Col76: {sampleData.Col76}");
-            Console.WriteLine($"Col77: {sampleData.Col77}");
-            Console.WriteLine($"Col78: {sampleData.Col78}");
-            Console.WriteLine($"Col79: {sampleData.Col79}");
-            Console.WriteLine($"Col80: {sampleData.Col80}");
-            Console.WriteLine($"Col81: {sampleData.Col81}");
-            Console.WriteLine($"Col82: {sampleData.Col82}");
-            Console.WriteLine($"Col83: {sampleData.Col83}");
-            Console.WriteLine($"Col84: {sampleData.Col84}");
-            Console.WriteLine($"Col85: {sampleData.Col85}");
-            Console.WriteLine($"Col86: {sampleData.Col86}");
-            Console.WriteLine($"Col87: {sampleData.Col87}");
-            Console.WriteLine($"Col88: {sampleData.Col88}");
-            Console.WriteLine($"Col89: {sampleData.Col89}");
-            Console.WriteLine($"Col90: {sampleData.Col90}");
-            Console.WriteLine($"Col91: {sampleData.Col91}");
-            Console.WriteLine($"Col92: {sampleData.Col92}");
-            Console.WriteLine($"Col93: {sampleData.Col93}");
-            Console.WriteLine($"Col94: {sampleData.Col94}");
-            Console.WriteLine($"Col95: {sampleData.Col95}");
-            Console.WriteLine($"Col96: {sampleData.Col96}");
-            Console.WriteLine($"Col97: {sampleData.Col97}");
-            Console.WriteLine($"Col98: {sampleData.Col98}");
-            Console.WriteLine($"Col99: {sampleData.Col99}");
-            Console.WriteLine($"Col100: {sampleData.Col100}");
-            Console.WriteLine($"Col101: {sampleData.Col101}");
-            Console.WriteLine($"Col102: {sampleData.Col102}");
-            Console.WriteLine($"Col103: {sampleData.Col103}");
-            Console.WriteLine($"Col104: {sampleData.Col104}");
-            Console.WriteLine($"Col105: {sampleData.Col105}");
-            Console.WriteLine($"Col106: {sampleData.Col106}");
-            Console.WriteLine($"Col107: {sampleData.Col107}");
-            Console.WriteLine($"Col108: {sampleData.Col108}");
-            Console.WriteLine($"Col109: {sampleData.Col109}");
-            Console.WriteLine($"Col110: {sampleData.Col110}");
-            Console.WriteLine($"Col111: {sampleData.Col111}");
-            Console.WriteLine($"Col112: {sampleData.Col112}");
-            Console.WriteLine($"Col113: {sampleData.Col113}");
-            Console.WriteLine($"Col114: {sampleData.Col114}");
-            Console.WriteLine($"Col115: {sampleData.Col115}");
-            Console.WriteLine($"Col116: {sampleData.Col116}");
-            Console.WriteLine($"Col117: {sampleData.Col117}");
-            Console.WriteLine($"Col118: {sampleData.Col118}");
-            Console.WriteLine($"Col119: {sampleData.Col119}");
-            Console.WriteLine($"Col120: {sampleData.Col120}");
-            Console.WriteLine($"Col121: {sampleData.Col121}");
-            Console.WriteLine($"Col122: {sampleData.Col122}");
-            Console.WriteLine($"Col123: {sampleData.Col123}");
-            Console.WriteLine($"Col124: {sampleData.Col124}");
-            Console.WriteLine($"Col125: {sampleData.Col125}");
-            Console.WriteLine($"Col126: {sampleData.Col126}");
-            Console.WriteLine($"Col127: {sampleData.Col127}");
-            Console.WriteLine($"Col128: {sampleData.Col128}");
-            Console.WriteLine($"Col129: {sampleData.Col129}");
-            Console.WriteLine($"Col130: {sampleData.Col130}");
-            Console.WriteLine($"Col131: {sampleData.Col131}");
-            Console.WriteLine($"Col132: {sampleData.Col132}");
-            Console.WriteLine($"Col133: {sampleData.Col133}");
-            Console.WriteLine($"Col134: {sampleData.Col134}");
-            Console.WriteLine($"Col135: {sampleData.Col135}");
-            Console.WriteLine($"Col136: {sampleData.Col136}");
-            Console.WriteLine($"Col137: {sampleData.Col137}");
-            Console.WriteLine($"Col138: {sampleData.Col138}");
-            Console.WriteLine($"Col139: {sampleData.Col139}");
-            Console.WriteLine($"Col140: {sampleData.Col140}");
-            Console.WriteLine($"Col141: {sampleData.Col141}");
-            Console.WriteLine($"Col142: {sampleData.Col142}");
-            Console.WriteLine($"Col143: {sampleData.Col143}");
-            Console.WriteLine($"Col144: {sampleData.Col144}");
-            Console.WriteLine($"Col145: {sampleData.Col145}");
-            Console.WriteLine($"Col146: {sampleData.Col146}");
-            Console.WriteLine($"Col147: {sampleData.Col147}");
-            Console.WriteLine($"Col148: {sampleData.Col148}");
-            Console.WriteLine($"Col149: {sampleData.Col149}");
-            Console.WriteLine($"Col150: {sampleData.Col150}");
-            Console.WriteLine($"Col151: {sampleData.Col151}");
-            Console.WriteLine($"Col152: {sampleData.Col152}");
-            Console.WriteLine($"Col153: {sampleData.Col153}");
-            Console.WriteLine($"Col154: {sampleData.Col154}");
-            Console.WriteLine($"Col155: {sampleData.Col155}");
-            Console.WriteLine($"Col156: {sampleData.Col156}");
-            Console.WriteLine($"Col157: {sampleData.Col157}");
-            Console.WriteLine($"Col158: {sampleData.Col158}");
-            Console.WriteLine($"Col159: {sampleData.Col159}");
-            Console.WriteLine($"Col160: {sampleData.Col160}");
-            Console.WriteLine($"Col161: {sampleData.Col161}");
-            Console.WriteLine($"Col162: {sampleData.Col162}");
-            Console.WriteLine($"Col163: {sampleData.Col163}");
-            Console.WriteLine($"Col164: {sampleData.Col164}");
-            Console.WriteLine($"Col165: {sampleData.Col165}");
-            Console.WriteLine($"Col166: {sampleData.Col166}");
-            Console.WriteLine($"Col167: {sampleData.Col167}");
-            Console.WriteLine($"Col168: {sampleData.Col168}");
-            Console.WriteLine($"Col169: {sampleData.Col169}");
-            Console.WriteLine($"Col170: {sampleData.Col170}");
-            Console.WriteLine($"Col171: {sampleData.Col171}");
-            Console.WriteLine($"Col172: {sampleData.Col172}");
-            Console.WriteLine($"Col173: {sampleData.Col173}");
-            Console.WriteLine($"Col174: {sampleData.Col174}");
-            Console.WriteLine($"Col175: {sampleData.Col175}");
-            Console.WriteLine($"Col176: {sampleData.Col176}");
-            Console.WriteLine($"Col177: {sampleData.Col177}");
-            Console.WriteLine($"Col178: {sampleData.Col178}");
-            Console.WriteLine($"Col179: {sampleData.Col179}");
-            Console.WriteLine($"Col180: {sampleData.Col180}");
-            Console.WriteLine($"Col181: {sampleData.Col181}");
-            Console.WriteLine($"Col182: {sampleData.Col182}");
-            Console.WriteLine($"Col183: {sampleData.Col183}");
-            Console.WriteLine($"Col184: {sampleData.Col184}");
-            Console.WriteLine($"Col185: {sampleData.Col185}");
-            Console.WriteLine($"Col186: {sampleData.Col186}");
-            Console.WriteLine($"Col187: {sampleData.Col187}");
-            Console.WriteLine($"Col188: {sampleData.Col188}");
-            Console.WriteLine($"Col189: {sampleData.Col189}");
-            Console.WriteLine($"Col190: {sampleData.Col190}");
-            Console.WriteLine($"Col191: {sampleData.Col191}");
-            Console.WriteLine($"Col192: {sampleData.Col192}");
-            Console.WriteLine($"Col193: {sampleData.Col193}");
-            Console.WriteLine($"Col194: {sampleData.Col194}");
-            Console.WriteLine($"Col195: {sampleData.Col195}");
-            Console.WriteLine($"Col196: {sampleData.Col196}");
-            Console.WriteLine($"Col197: {sampleData.Col197}");
-            Console.WriteLine($"Col198: {sampleData.Col198}");
-            Console.WriteLine($"Col199: {sampleData.Col199}");
-            Console.WriteLine($"Col200: {sampleData.Col200}");
-            Console.WriteLine($"Col201: {sampleData.Col201}");
-            Console.WriteLine($"Col202: {sampleData.Col202}");
-            Console.WriteLine($"Col203: {sampleData.Col203}");
-            Console.WriteLine($"Col204: {sampleData.Col204}");
-            Console.WriteLine($"Col205: {sampleData.Col205}");
-            Console.WriteLine($"Col206: {sampleData.Col206}");
-            Console.WriteLine($"Col207: {sampleData.Col207}");
-            Console.WriteLine($"Col208: {sampleData.Col208}");
-            Console.WriteLine($"Col209: {sampleData.Col209}");
-            Console.WriteLine($"Col210: {sampleData.Col210}");
-            Console.WriteLine($"Col211: {sampleData.Col211}");
-            Console.WriteLine($"Col212: {sampleData.Col212}");
-            Console.WriteLine($"Col213: {sampleData.Col213}");
-            Console.WriteLine($"Col214: {sampleData.Col214}");
-            Console.WriteLine($"Col215: {sampleData.Col215}");
-            Console.WriteLine($"Col216: {sampleData.Col216}");
-            Console.WriteLine($"Col217: {sampleData.Col217}");
-            Console.WriteLine($"Col218: {sampleData.Col218}");
-            Console.WriteLine($"Col219: {sampleData.Col219}");
-            Console.WriteLine($"Col220: {sampleData.Col220}");
-            Console.WriteLine($"Col221: {sampleData.Col221}");
-            Console.WriteLine($"Col222: {sampleData.Col222}");
-            Console.WriteLine($"Col223: {sampleData.Col223}");
-            Console.WriteLine($"Col224: {sampleData.Col224}");
-            Console.WriteLine($"Col225: {sampleData.Col225}");
-            Console.WriteLine($"Col226: {sampleData.Col226}");
-            Console.WriteLine($"Col227: {sampleData.Col227}");
-            Console.WriteLine($"Col228: {sampleData.Col228}");
-            Console.WriteLine($"Col229: {sampleData.Col229}");
-            Console.WriteLine($"Col230: {sampleData.Col230}");
-            Console.WriteLine($"Col231: {sampleData.Col231}");
-            Console.WriteLine($"Col232: {sampleData.Col232}");
-            Console.WriteLine($"Col233: {sampleData.Col233}");
-            Console.WriteLine($"Col234: {sampleData.Col234}");
-            Console.WriteLine($"Col235: {sampleData.Col235}");
-            Console.WriteLine($"Col236: {sampleData.Col236}");
-            Console.WriteLine($"Col237: {sampleData.Col237}");
-            Console.WriteLine($"Col238: {sampleData.Col238}");
-            Console.WriteLine($"Col239: {sampleData.Col239}");
-            Console.WriteLine($"Col240: {sampleData.Col240}");
-            Console.WriteLine($"Col241: {sampleData.Col241}");
-            Console.WriteLine($"Col242: {sampleData.Col242}");
-            Console.WriteLine($"Col243: {sampleData.Col243}");
-            Console.WriteLine($"Col244: {sampleData.Col244}");
-            Console.WriteLine($"Col245: {sampleData.Col245}");
-            Console.WriteLine($"Col246: {sampleData.Col246}");
-            Console.WriteLine($"Col247: {sampleData.Col247}");
-            Console.WriteLine($"Col248: {sampleData.Col248}");
-            Console.WriteLine($"Col249: {sampleData.Col249}");
-            Console.WriteLine($"Col250: {sampleData.Col250}");
-            Console.WriteLine($"Col251: {sampleData.Col251}");
-            Console.WriteLine($"Col252: {sampleData.Col252}");
-            Console.WriteLine($"Col253: {sampleData.Col253}");
-            Console.WriteLine($"Col254: {sampleData.Col254}");
-            Console.WriteLine($"Col255: {sampleData.Col255}");
-            Console.WriteLine($"Col256: {sampleData.Col256}");
-            Console.WriteLine($"Col257: {sampleData.Col257}");
-            Console.WriteLine($"Col258: {sampleData.Col258}");
-            Console.WriteLine($"Col259: {sampleData.Col259}");
-            Console.WriteLine($"Col260: {sampleData.Col260}");
-            Console.WriteLine($"Col261: {sampleData.Col261}");
-            Console.WriteLine($"Col262: {sampleData.Col262}");
-            Console.WriteLine($"Col263: {sampleData.Col263}");
-            Console.WriteLine($"Col264: {sampleData.Col264}");
-            Console.WriteLine($"Col265: {sampleData.Col265}");
-            Console.WriteLine($"Col266: {sampleData.Col266}");
-            Console.WriteLine($"Col267: {sampleData.Col267}");
-            Console.WriteLine($"Col268: {sampleData.Col268}");
-            Console.WriteLine($"Col269: {sampleData.Col269}");
-            Console.WriteLine($"Col270: {sampleData.Col270}");
-            Console.WriteLine($"Col271: {sampleData.Col271}");
-            Console.WriteLine($"Col272: {sampleData.Col272}");
-            Console.WriteLine($"Col273: {sampleData.Col273}");
-            Console.WriteLine($"Col274: {sampleData.Col274}");
-            Console.WriteLine($"Col275: {sampleData.Col275}");
-            Console.WriteLine($"Col276: {sampleData.Col276}");
-            Console.WriteLine($"Col277: {sampleData.Col277}");
-            Console.WriteLine($"Col278: {sampleData.Col278}");
-            Console.WriteLine($"Col279: {sampleData.Col279}");
-            Console.WriteLine($"Col280: {sampleData.Col280}");
-            Console.WriteLine($"Col281: {sampleData.Col281}");
-            Console.WriteLine($"Col282: {sampleData.Col282}");
-            Console.WriteLine($"Col283: {sampleData.Col283}");
-            Console.WriteLine($"Col284: {sampleData.Col284}");
-            Console.WriteLine($"Col285: {sampleData.Col285}");
-            Console.WriteLine($"Col286: {sampleData.Col286}");
-            Console.WriteLine($"Col287: {sampleData.Col287}");
-            Console.WriteLine($"Col288: {sampleData.Col288}");
-            Console.WriteLine($"Col289: {sampleData.Col289}");
-            Console.WriteLine($"Col290: {sampleData.Col290}");
-            Console.WriteLine($"Col291: {sampleData.Col291}");
-            Console.WriteLine($"Col292: {sampleData.Col292}");
-            Console.WriteLine($"Col293: {sampleData.Col293}");
-            Console.WriteLine($"Col294: {sampleData.Col294}");
-            Console.WriteLine($"Col295: {sampleData.Col295}");
-            Console.WriteLine($"Col296: {sampleData.Col296}");
-            Console.WriteLine($"Col297: {sampleData.Col297}");
-            Console.WriteLine($"Col298: {sampleData.Col298}");
-            Console.WriteLine($"Col299: {sampleData.Col299}");
-            Console.WriteLine($"Col300: {sampleData.Col300}");
-            Console.WriteLine($"Col301: {sampleData.Col301}");
-            Console.WriteLine($"Col302: {sampleData.Col302}");
-            Console.WriteLine($"Col303: {sampleData.Col303}");
-            Console.WriteLine($"Col304: {sampleData.Col304}");
-            Console.WriteLine($"Col305: {sampleData.Col305}");
-            Console.WriteLine($"Col306: {sampleData.Col306}");
-            Console.WriteLine($"Col307: {sampleData.Col307}");
-            Console.WriteLine($"Col308: {sampleData.Col308}");
-            Console.WriteLine($"Col309: {sampleData.Col309}");
-            Console.WriteLine($"Col310: {sampleData.Col310}");
-            Console.WriteLine($"Col311: {sampleData.Col311}");
-            Console.WriteLine($"Col312: {sampleData.Col312}");
-            Console.WriteLine($"Col313: {sampleData.Col313}");
-            Console.WriteLine($"Col314: {sampleData.Col314}");
-            Console.WriteLine($"Col315: {sampleData.Col315}");
-            Console.WriteLine($"Col316: {sampleData.Col316}");
-            Console.WriteLine($"Col317: {sampleData.Col317}");
-            Console.WriteLine($"Col318: {sampleData.Col318}");
-            Console.WriteLine($"Col319: {sampleData.Col319}");
-            Console.WriteLine($"Col320: {sampleData.Col320}");
-            Console.WriteLine($"Col321: {sampleData.Col321}");
-            Console.WriteLine($"Col322: {sampleData.Col322}");
-            Console.WriteLine($"Col323: {sampleData.Col323}");
-            Console.WriteLine($"Col324: {sampleData.Col324}");
-            Console.WriteLine($"Col325: {sampleData.Col325}");
-            Console.WriteLine($"Col326: {sampleData.Col326}");
-            Console.WriteLine($"Col327: {sampleData.Col327}");
-            Console.WriteLine($"Col328: {sampleData.Col328}");
-            Console.WriteLine($"Col329: {sampleData.Col329}");
-            Console.WriteLine($"Col330: {sampleData.Col330}");
-            Console.WriteLine($"Col331: {sampleData.Col331}");
-            Console.WriteLine($"Col332: {sampleData.Col332}");
-            Console.WriteLine($"Col333: {sampleData.Col333}");
-            Console.WriteLine($"Col334: {sampleData.Col334}");
-            Console.WriteLine($"Col335: {sampleData.Col335}");
-            Console.WriteLine($"Col336: {sampleData.Col336}");
-            Console.WriteLine($"Col337: {sampleData.Col337}");
-            Console.WriteLine($"Col338: {sampleData.Col338}");
-            Console.WriteLine($"Col339: {sampleData.Col339}");
-            Console.WriteLine($"Col340: {sampleData.Col340}");
-            Console.WriteLine($"Col341: {sampleData.Col341}");
-            Console.WriteLine($"Col342: {sampleData.Col342}");
-            Console.WriteLine($"Col343: {sampleData.Col343}");
-            Console.WriteLine($"Col344: {sampleData.Col344}");
-            Console.WriteLine($"Col345: {sampleData.Col345}");
-            Console.WriteLine($"Col346: {sampleData.Col346}");
-            Console.WriteLine($"Col347: {sampleData.Col347}");
-            Console.WriteLine($"Col348: {sampleData.Col348}");
-            Console.WriteLine($"Col349: {sampleData.Col349}");
-            Console.WriteLine($"Col350: {sampleData.Col350}");
-            Console.WriteLine($"Col351: {sampleData.Col351}");
-            Console.WriteLine($"Col352: {sampleData.Col352}");
-            Console.WriteLine($"Col353: {sampleData.Col353}");
-            Console.WriteLine($"Col354: {sampleData.Col354}");
-            Console.WriteLine($"Col355: {sampleData.Col355}");
-            Console.WriteLine($"Col356: {sampleData.Col356}");
-            Console.WriteLine($"Col357: {sampleData.Col357}");
-            Console.WriteLine($"Col358: {sampleData.Col358}");
-            Console.WriteLine($"Col359: {sampleData.Col359}");
-            Console.WriteLine($"Col360: {sampleData.Col360}");
-            Console.WriteLine($"Col361: {sampleData.Col361}");
-            Console.WriteLine($"Col362: {sampleData.Col362}");
-            Console.WriteLine($"Col363: {sampleData.Col363}");
-            Console.WriteLine($"Col364: {sampleData.Col364}");
-            Console.WriteLine($"Col365: {sampleData.Col365}");
-            Console.WriteLine($"Col366: {sampleData.Col366}");
-            Console.WriteLine($"Col367: {sampleData.Col367}");
-            Console.WriteLine($"Col368: {sampleData.Col368}");
-            Console.WriteLine($"Col369: {sampleData.Col369}");
-            Console.WriteLine($"Col370: {sampleData.Col370}");
-            Console.WriteLine($"Col371: {sampleData.Col371}");
-            Console.WriteLine($"Col372: {sampleData.Col372}");
-            Console.WriteLine($"Col373: {sampleData.Col373}");
-            Console.WriteLine($"Col374: {sampleData.Col374}");
-            Console.WriteLine($"Col375: {sampleData.Col375}");
-            Console.WriteLine($"Col376: {sampleData.Col376}");
-            Console.WriteLine($"Col377: {sampleData.Col377}");
-            Console.WriteLine($"Col378: {sampleData.Col378}");
-            Console.WriteLine($"Col379: {sampleData.Col379}");
-            Console.WriteLine($"Col380: {sampleData.Col380}");
-            Console.WriteLine($"Col381: {sampleData.Col381}");
-            Console.WriteLine($"Col382: {sampleData.Col382}");
-            Console.WriteLine($"Col383: {sampleData.Col383}");
-            Console.WriteLine($"Col384: {sampleData.Col384}");
-            Console.WriteLine($"Col385: {sampleData.Col385}");
-            Console.WriteLine($"Col386: {sampleData.Col386}");
-            Console.WriteLine($"Col387: {sampleData.Col387}");
-            Console.WriteLine($"Col388: {sampleData.Col388}");
-            Console.WriteLine($"Col389: {sampleData.Col389}");
-            Console.WriteLine($"Col390: {sampleData.Col390}");
-            Console.WriteLine($"Col391: {sampleData.Col391}");
-            Console.WriteLine($"Col392: {sampleData.Col392}");
-            Console.WriteLine($"Col393: {sampleData.Col393}");
-            Console.WriteLine($"Col394: {sampleData.Col394}");
-            Console.WriteLine($"Col395: {sampleData.Col395}");
-            Console.WriteLine($"Col396: {sampleData.Col396}");
-            Console.WriteLine($"Col397: {sampleData.Col397}");
-            Console.WriteLine($"Col398: {sampleData.Col398}");
-            Console.WriteLine($"Col399: {sampleData.Col399}");
-            Console.WriteLine($"Col400: {sampleData.Col400}");
-            Console.WriteLine($"Col401: {sampleData.Col401}");
-            Console.WriteLine($"Col402: {sampleData.Col402}");
-            Console.WriteLine($"Col403: {sampleData.Col403}");
-            Console.WriteLine($"Col404: {sampleData.Col404}");
-            Console.WriteLine($"Col405: {sampleData.Col405}");
-            Console.WriteLine($"Col406: {sampleData.Col406}");
-            Console.WriteLine($"Col407: {sampleData.Col407}");
-            Console.WriteLine($"Col408: {sampleData.Col408}");
-            Console.WriteLine($"Col409: {sampleData.Col409}");
-            Console.WriteLine($"Col410: {sampleData.Col410}");
-            Console.WriteLine($"Col411: {sampleData.Col411}");
-            Console.WriteLine($"Col412: {sampleData.Col412}");
-            Console.WriteLine($"Col413: {sampleData.Col413}");
-            Console.WriteLine($"Col414: {sampleData.Col414}");
-            Console.WriteLine($"Col415: {sampleData.Col415}");
-            Console.WriteLine($"Col416: {sampleData.Col416}");
-            Console.WriteLine($"Col417: {sampleData.Col417}");
-            Console.WriteLine($"Col418: {sampleData.Col418}");
-            Console.WriteLine($"Col419: {sampleData.Col419}");
-            Console.WriteLine($"Col420: {sampleData.Col420}");
-            Console.WriteLine($"Col421: {sampleData.Col421}");
-            Console.WriteLine($"Col422: {sampleData.Col422}");
-            Console.WriteLine($"Col423: {sampleData.Col423}");
-            Console.WriteLine($"Col424: {sampleData.Col424}");
-            Console.WriteLine($"Col425: {sampleData.Col425}");
-            Console.WriteLine($"Col426: {sampleData.Col426}");
-            Console.WriteLine($"Col427: {sampleData.Col427}");
-            Console.WriteLine($"Col428: {sampleData.Col428}");
-            Console.WriteLine($"Col429: {sampleData.Col429}");
-            Console.WriteLine($"Col430: {sampleData.Col430}");
-            Console.WriteLine($"Col431: {sampleData.Col431}");
-            Console.WriteLine($"Col432: {sampleData.Col432}");
-            Console.WriteLine($"Col433: {sampleData.Col433}");
-            Console.WriteLine($"Col434: {sampleData.Col434}");
-            Console.WriteLine($"Col435: {sampleData.Col435}");
-            Console.WriteLine($"Col436: {sampleData.Col436}");
-            Console.WriteLine($"Col437: {sampleData.Col437}");
-            Console.WriteLine($"Col438: {sampleData.Col438}");
-            Console.WriteLine($"Col439: {sampleData.Col439}");
-            Console.WriteLine($"Col440: {sampleData.Col440}");
-            Console.WriteLine($"Col441: {sampleData.Col441}");
-            Console.WriteLine($"Col442: {sampleData.Col442}");
-            Console.WriteLine($"Col443: {sampleData.Col443}");
-            Console.WriteLine($"Col444: {sampleData.Col444}");
-            Console.WriteLine($"Col445: {sampleData.Col445}");
-            Console.WriteLine($"Col446: {sampleData.Col446}");
-            Console.WriteLine($"Col447: {sampleData.Col447}");
-            Console.WriteLine($"Col448: {sampleData.Col448}");
-            Console.WriteLine($"Col449: {sampleData.Col449}");
-            Console.WriteLine($"Col450: {sampleData.Col450}");
-            Console.WriteLine($"Col451: {sampleData.Col451}");
-            Console.WriteLine($"Col452: {sampleData.Col452}");
-            Console.WriteLine($"Col453: {sampleData.Col453}");
-            Console.WriteLine($"Col454: {sampleData.Col454}");
-            Console.WriteLine($"Col455: {sampleData.Col455}");
-            Console.WriteLine($"Col456: {sampleData.Col456}");
-            Console.WriteLine($"Col457: {sampleData.Col457}");
-            Console.WriteLine($"Col458: {sampleData.Col458}");
-            Console.WriteLine($"Col459: {sampleData.Col459}");
-            Console.WriteLine($"Col460: {sampleData.Col460}");
-            Console.WriteLine($"Col461: {sampleData.Col461}");
-            Console.WriteLine($"Col462: {sampleData.Col462}");
-            Console.WriteLine($"Col463: {sampleData.Col463}");
-            Console.WriteLine($"Col464: {sampleData.Col464}");
-            Console.WriteLine($"Col465: {sampleData.Col465}");
-            Console.WriteLine($"Col466: {sampleData.Col466}");
-            Console.WriteLine($"Col467: {sampleData.Col467}");
-            Console.WriteLine($"Col468: {sampleData.Col468}");
-            Console.WriteLine($"Col469: {sampleData.Col469}");
-            Console.WriteLine($"Col470: {sampleData.Col470}");
-            Console.WriteLine($"Col471: {sampleData.Col471}");
-            Console.WriteLine($"Col472: {sampleData.Col472}");
-            Console.WriteLine($"Col473: {sampleData.Col473}");
-            Console.WriteLine($"Col474: {sampleData.Col474}");
-            Console.WriteLine($"Col475: {sampleData.Col475}");
-            Console.WriteLine($"Col476: {sampleData.Col476}");
-            Console.WriteLine($"Col477: {sampleData.Col477}");
-            Console.WriteLine($"Col478: {sampleData.Col478}");
-            Console.WriteLine($"Col479: {sampleData.Col479}");
-            Console.WriteLine($"Col480: {sampleData.Col480}");
-            Console.WriteLine($"\n\nPredicted Col0 value {predictionResult.Prediction} \nPredicted Col0 scores: [{String.Join(",", predictionResult.Score)}]\n\n");
+            Console.WriteLine("Using model to make single prediction -- Comparing actual Target with predicted Target from sample data...\n\n");
+            Console.WriteLine($"_0: {sampleData._0}");
+            Console.WriteLine($"_1: {sampleData._1}");
+            Console.WriteLine($"_2: {sampleData._2}");
+            Console.WriteLine($"_3: {sampleData._3}");
+            Console.WriteLine($"_4: {sampleData._4}");
+            Console.WriteLine($"_5: {sampleData._5}");
+            Console.WriteLine($"_6: {sampleData._6}");
+            Console.WriteLine($"_7: {sampleData._7}");
+            Console.WriteLine($"_8: {sampleData._8}");
+            Console.WriteLine($"_9: {sampleData._9}");
+            Console.WriteLine($"_10: {sampleData._10}");
+            Console.WriteLine($"_11: {sampleData._11}");
+            Console.WriteLine($"_12: {sampleData._12}");
+            Console.WriteLine($"_13: {sampleData._13}");
+            Console.WriteLine($"_14: {sampleData._14}");
+            Console.WriteLine($"_15: {sampleData._15}");
+            Console.WriteLine($"_16: {sampleData._16}");
+            Console.WriteLine($"_17: {sampleData._17}");
+            Console.WriteLine($"_18: {sampleData._18}");
+            Console.WriteLine($"_19: {sampleData._19}");
+            Console.WriteLine($"_20: {sampleData._20}");
+            Console.WriteLine($"_21: {sampleData._21}");
+            Console.WriteLine($"_22: {sampleData._22}");
+            Console.WriteLine($"_23: {sampleData._23}");
+            Console.WriteLine($"_24: {sampleData._24}");
+            Console.WriteLine($"_25: {sampleData._25}");
+            Console.WriteLine($"_26: {sampleData._26}");
+            Console.WriteLine($"_27: {sampleData._27}");
+            Console.WriteLine($"_28: {sampleData._28}");
+            Console.WriteLine($"_29: {sampleData._29}");
+            Console.WriteLine($"_30: {sampleData._30}");
+            Console.WriteLine($"_31: {sampleData._31}");
+            Console.WriteLine($"_32: {sampleData._32}");
+            Console.WriteLine($"_33: {sampleData._33}");
+            Console.WriteLine($"_34: {sampleData._34}");
+            Console.WriteLine($"_35: {sampleData._35}");
+            Console.WriteLine($"_36: {sampleData._36}");
+            Console.WriteLine($"_37: {sampleData._37}");
+            Console.WriteLine($"_38: {sampleData._38}");
+            Console.WriteLine($"_39: {sampleData._39}");
+            Console.WriteLine($"_40: {sampleData._40}");
+            Console.WriteLine($"_41: {sampleData._41}");
+            Console.WriteLine($"_42: {sampleData._42}");
+            Console.WriteLine($"_43: {sampleData._43}");
+            Console.WriteLine($"_44: {sampleData._44}");
+            Console.WriteLine($"_45: {sampleData._45}");
+            Console.WriteLine($"_46: {sampleData._46}");
+            Console.WriteLine($"_47: {sampleData._47}");
+            Console.WriteLine($"_48: {sampleData._48}");
+            Console.WriteLine($"_49: {sampleData._49}");
+            Console.WriteLine($"_50: {sampleData._50}");
+            Console.WriteLine($"_51: {sampleData._51}");
+            Console.WriteLine($"_52: {sampleData._52}");
+            Console.WriteLine($"_53: {sampleData._53}");
+            Console.WriteLine($"_54: {sampleData._54}");
+            Console.WriteLine($"_55: {sampleData._55}");
+            Console.WriteLine($"_56: {sampleData._56}");
+            Console.WriteLine($"_57: {sampleData._57}");
+            Console.WriteLine($"_58: {sampleData._58}");
+            Console.WriteLine($"_59: {sampleData._59}");
+            Console.WriteLine($"_60: {sampleData._60}");
+            Console.WriteLine($"_61: {sampleData._61}");
+            Console.WriteLine($"_62: {sampleData._62}");
+            Console.WriteLine($"_63: {sampleData._63}");
+            Console.WriteLine($"_64: {sampleData._64}");
+            Console.WriteLine($"_65: {sampleData._65}");
+            Console.WriteLine($"_66: {sampleData._66}");
+            Console.WriteLine($"_67: {sampleData._67}");
+            Console.WriteLine($"_68: {sampleData._68}");
+            Console.WriteLine($"_69: {sampleData._69}");
+            Console.WriteLine($"_70: {sampleData._70}");
+            Console.WriteLine($"_71: {sampleData._71}");
+            Console.WriteLine($"_72: {sampleData._72}");
+            Console.WriteLine($"_73: {sampleData._73}");
+            Console.WriteLine($"_74: {sampleData._74}");
+            Console.WriteLine($"_75: {sampleData._75}");
+            Console.WriteLine($"_76: {sampleData._76}");
+            Console.WriteLine($"_77: {sampleData._77}");
+            Console.WriteLine($"_78: {sampleData._78}");
+            Console.WriteLine($"_79: {sampleData._79}");
+            Console.WriteLine($"_80: {sampleData._80}");
+            Console.WriteLine($"_81: {sampleData._81}");
+            Console.WriteLine($"_82: {sampleData._82}");
+            Console.WriteLine($"_83: {sampleData._83}");
+            Console.WriteLine($"_84: {sampleData._84}");
+            Console.WriteLine($"_85: {sampleData._85}");
+            Console.WriteLine($"_86: {sampleData._86}");
+            Console.WriteLine($"_87: {sampleData._87}");
+            Console.WriteLine($"_88: {sampleData._88}");
+            Console.WriteLine($"_89: {sampleData._89}");
+            Console.WriteLine($"_90: {sampleData._90}");
+            Console.WriteLine($"_91: {sampleData._91}");
+            Console.WriteLine($"_92: {sampleData._92}");
+            Console.WriteLine($"_93: {sampleData._93}");
+            Console.WriteLine($"_94: {sampleData._94}");
+            Console.WriteLine($"_95: {sampleData._95}");
+            Console.WriteLine($"_96: {sampleData._96}");
+            Console.WriteLine($"_97: {sampleData._97}");
+            Console.WriteLine($"_98: {sampleData._98}");
+            Console.WriteLine($"_99: {sampleData._99}");
+            Console.WriteLine($"_100: {sampleData._100}");
+            Console.WriteLine($"_101: {sampleData._101}");
+            Console.WriteLine($"_102: {sampleData._102}");
+            Console.WriteLine($"_103: {sampleData._103}");
+            Console.WriteLine($"_104: {sampleData._104}");
+            Console.WriteLine($"_105: {sampleData._105}");
+            Console.WriteLine($"_106: {sampleData._106}");
+            Console.WriteLine($"_107: {sampleData._107}");
+            Console.WriteLine($"_108: {sampleData._108}");
+            Console.WriteLine($"_109: {sampleData._109}");
+            Console.WriteLine($"_110: {sampleData._110}");
+            Console.WriteLine($"_111: {sampleData._111}");
+            Console.WriteLine($"_112: {sampleData._112}");
+            Console.WriteLine($"_113: {sampleData._113}");
+            Console.WriteLine($"_114: {sampleData._114}");
+            Console.WriteLine($"_115: {sampleData._115}");
+            Console.WriteLine($"_116: {sampleData._116}");
+            Console.WriteLine($"_117: {sampleData._117}");
+            Console.WriteLine($"_118: {sampleData._118}");
+            Console.WriteLine($"_119: {sampleData._119}");
+            Console.WriteLine($"_120: {sampleData._120}");
+            Console.WriteLine($"_121: {sampleData._121}");
+            Console.WriteLine($"_122: {sampleData._122}");
+            Console.WriteLine($"_123: {sampleData._123}");
+            Console.WriteLine($"_124: {sampleData._124}");
+            Console.WriteLine($"_125: {sampleData._125}");
+            Console.WriteLine($"_126: {sampleData._126}");
+            Console.WriteLine($"_127: {sampleData._127}");
+            Console.WriteLine($"_128: {sampleData._128}");
+            Console.WriteLine($"_129: {sampleData._129}");
+            Console.WriteLine($"_130: {sampleData._130}");
+            Console.WriteLine($"_131: {sampleData._131}");
+            Console.WriteLine($"_132: {sampleData._132}");
+            Console.WriteLine($"_133: {sampleData._133}");
+            Console.WriteLine($"_134: {sampleData._134}");
+            Console.WriteLine($"_135: {sampleData._135}");
+            Console.WriteLine($"_136: {sampleData._136}");
+            Console.WriteLine($"_137: {sampleData._137}");
+            Console.WriteLine($"_138: {sampleData._138}");
+            Console.WriteLine($"_139: {sampleData._139}");
+            Console.WriteLine($"_140: {sampleData._140}");
+            Console.WriteLine($"_141: {sampleData._141}");
+            Console.WriteLine($"_142: {sampleData._142}");
+            Console.WriteLine($"_143: {sampleData._143}");
+            Console.WriteLine($"_144: {sampleData._144}");
+            Console.WriteLine($"_145: {sampleData._145}");
+            Console.WriteLine($"_146: {sampleData._146}");
+            Console.WriteLine($"_147: {sampleData._147}");
+            Console.WriteLine($"_148: {sampleData._148}");
+            Console.WriteLine($"_149: {sampleData._149}");
+            Console.WriteLine($"_150: {sampleData._150}");
+            Console.WriteLine($"_151: {sampleData._151}");
+            Console.WriteLine($"_152: {sampleData._152}");
+            Console.WriteLine($"_153: {sampleData._153}");
+            Console.WriteLine($"_154: {sampleData._154}");
+            Console.WriteLine($"_155: {sampleData._155}");
+            Console.WriteLine($"_156: {sampleData._156}");
+            Console.WriteLine($"_157: {sampleData._157}");
+            Console.WriteLine($"_158: {sampleData._158}");
+            Console.WriteLine($"_159: {sampleData._159}");
+            Console.WriteLine($"_160: {sampleData._160}");
+            Console.WriteLine($"_161: {sampleData._161}");
+            Console.WriteLine($"_162: {sampleData._162}");
+            Console.WriteLine($"_163: {sampleData._163}");
+            Console.WriteLine($"_164: {sampleData._164}");
+            Console.WriteLine($"_165: {sampleData._165}");
+            Console.WriteLine($"_166: {sampleData._166}");
+            Console.WriteLine($"_167: {sampleData._167}");
+            Console.WriteLine($"_168: {sampleData._168}");
+            Console.WriteLine($"_169: {sampleData._169}");
+            Console.WriteLine($"_170: {sampleData._170}");
+            Console.WriteLine($"_171: {sampleData._171}");
+            Console.WriteLine($"_172: {sampleData._172}");
+            Console.WriteLine($"_173: {sampleData._173}");
+            Console.WriteLine($"_174: {sampleData._174}");
+            Console.WriteLine($"_175: {sampleData._175}");
+            Console.WriteLine($"_176: {sampleData._176}");
+            Console.WriteLine($"_177: {sampleData._177}");
+            Console.WriteLine($"_178: {sampleData._178}");
+            Console.WriteLine($"_179: {sampleData._179}");
+            Console.WriteLine($"_180: {sampleData._180}");
+            Console.WriteLine($"_181: {sampleData._181}");
+            Console.WriteLine($"_182: {sampleData._182}");
+            Console.WriteLine($"_183: {sampleData._183}");
+            Console.WriteLine($"_184: {sampleData._184}");
+            Console.WriteLine($"_185: {sampleData._185}");
+            Console.WriteLine($"_186: {sampleData._186}");
+            Console.WriteLine($"_187: {sampleData._187}");
+            Console.WriteLine($"_188: {sampleData._188}");
+            Console.WriteLine($"_189: {sampleData._189}");
+            Console.WriteLine($"_190: {sampleData._190}");
+            Console.WriteLine($"_191: {sampleData._191}");
+            Console.WriteLine($"_192: {sampleData._192}");
+            Console.WriteLine($"_193: {sampleData._193}");
+            Console.WriteLine($"_194: {sampleData._194}");
+            Console.WriteLine($"_195: {sampleData._195}");
+            Console.WriteLine($"_196: {sampleData._196}");
+            Console.WriteLine($"_197: {sampleData._197}");
+            Console.WriteLine($"_198: {sampleData._198}");
+            Console.WriteLine($"_199: {sampleData._199}");
+            Console.WriteLine($"_200: {sampleData._200}");
+            Console.WriteLine($"_201: {sampleData._201}");
+            Console.WriteLine($"_202: {sampleData._202}");
+            Console.WriteLine($"_203: {sampleData._203}");
+            Console.WriteLine($"_204: {sampleData._204}");
+            Console.WriteLine($"_205: {sampleData._205}");
+            Console.WriteLine($"_206: {sampleData._206}");
+            Console.WriteLine($"_207: {sampleData._207}");
+            Console.WriteLine($"_208: {sampleData._208}");
+            Console.WriteLine($"_209: {sampleData._209}");
+            Console.WriteLine($"_210: {sampleData._210}");
+            Console.WriteLine($"_211: {sampleData._211}");
+            Console.WriteLine($"_212: {sampleData._212}");
+            Console.WriteLine($"_213: {sampleData._213}");
+            Console.WriteLine($"_214: {sampleData._214}");
+            Console.WriteLine($"_215: {sampleData._215}");
+            Console.WriteLine($"_216: {sampleData._216}");
+            Console.WriteLine($"_217: {sampleData._217}");
+            Console.WriteLine($"_218: {sampleData._218}");
+            Console.WriteLine($"_219: {sampleData._219}");
+            Console.WriteLine($"_220: {sampleData._220}");
+            Console.WriteLine($"_221: {sampleData._221}");
+            Console.WriteLine($"_222: {sampleData._222}");
+            Console.WriteLine($"_223: {sampleData._223}");
+            Console.WriteLine($"_224: {sampleData._224}");
+            Console.WriteLine($"_225: {sampleData._225}");
+            Console.WriteLine($"_226: {sampleData._226}");
+            Console.WriteLine($"_227: {sampleData._227}");
+            Console.WriteLine($"_228: {sampleData._228}");
+            Console.WriteLine($"_229: {sampleData._229}");
+            Console.WriteLine($"_230: {sampleData._230}");
+            Console.WriteLine($"_231: {sampleData._231}");
+            Console.WriteLine($"_232: {sampleData._232}");
+            Console.WriteLine($"_233: {sampleData._233}");
+            Console.WriteLine($"_234: {sampleData._234}");
+            Console.WriteLine($"_235: {sampleData._235}");
+            Console.WriteLine($"_236: {sampleData._236}");
+            Console.WriteLine($"_237: {sampleData._237}");
+            Console.WriteLine($"_238: {sampleData._238}");
+            Console.WriteLine($"_239: {sampleData._239}");
+            Console.WriteLine($"_240: {sampleData._240}");
+            Console.WriteLine($"_241: {sampleData._241}");
+            Console.WriteLine($"_242: {sampleData._242}");
+            Console.WriteLine($"_243: {sampleData._243}");
+            Console.WriteLine($"_244: {sampleData._244}");
+            Console.WriteLine($"_245: {sampleData._245}");
+            Console.WriteLine($"_246: {sampleData._246}");
+            Console.WriteLine($"_247: {sampleData._247}");
+            Console.WriteLine($"_248: {sampleData._248}");
+            Console.WriteLine($"_249: {sampleData._249}");
+            Console.WriteLine($"_250: {sampleData._250}");
+            Console.WriteLine($"_251: {sampleData._251}");
+            Console.WriteLine($"_252: {sampleData._252}");
+            Console.WriteLine($"_253: {sampleData._253}");
+            Console.WriteLine($"_254: {sampleData._254}");
+            Console.WriteLine($"_255: {sampleData._255}");
+            Console.WriteLine($"_256: {sampleData._256}");
+            Console.WriteLine($"_257: {sampleData._257}");
+            Console.WriteLine($"_258: {sampleData._258}");
+            Console.WriteLine($"_259: {sampleData._259}");
+            Console.WriteLine($"_260: {sampleData._260}");
+            Console.WriteLine($"_261: {sampleData._261}");
+            Console.WriteLine($"_262: {sampleData._262}");
+            Console.WriteLine($"_263: {sampleData._263}");
+            Console.WriteLine($"_264: {sampleData._264}");
+            Console.WriteLine($"_265: {sampleData._265}");
+            Console.WriteLine($"_266: {sampleData._266}");
+            Console.WriteLine($"_267: {sampleData._267}");
+            Console.WriteLine($"_268: {sampleData._268}");
+            Console.WriteLine($"_269: {sampleData._269}");
+            Console.WriteLine($"_270: {sampleData._270}");
+            Console.WriteLine($"_271: {sampleData._271}");
+            Console.WriteLine($"_272: {sampleData._272}");
+            Console.WriteLine($"_273: {sampleData._273}");
+            Console.WriteLine($"_274: {sampleData._274}");
+            Console.WriteLine($"_275: {sampleData._275}");
+            Console.WriteLine($"_276: {sampleData._276}");
+            Console.WriteLine($"_277: {sampleData._277}");
+            Console.WriteLine($"_278: {sampleData._278}");
+            Console.WriteLine($"_279: {sampleData._279}");
+            Console.WriteLine($"_280: {sampleData._280}");
+            Console.WriteLine($"_281: {sampleData._281}");
+            Console.WriteLine($"_282: {sampleData._282}");
+            Console.WriteLine($"_283: {sampleData._283}");
+            Console.WriteLine($"_284: {sampleData._284}");
+            Console.WriteLine($"_285: {sampleData._285}");
+            Console.WriteLine($"_286: {sampleData._286}");
+            Console.WriteLine($"_287: {sampleData._287}");
+            Console.WriteLine($"_288: {sampleData._288}");
+            Console.WriteLine($"_289: {sampleData._289}");
+            Console.WriteLine($"_290: {sampleData._290}");
+            Console.WriteLine($"_291: {sampleData._291}");
+            Console.WriteLine($"_292: {sampleData._292}");
+            Console.WriteLine($"_293: {sampleData._293}");
+            Console.WriteLine($"_294: {sampleData._294}");
+            Console.WriteLine($"_295: {sampleData._295}");
+            Console.WriteLine($"_296: {sampleData._296}");
+            Console.WriteLine($"_297: {sampleData._297}");
+            Console.WriteLine($"_298: {sampleData._298}");
+            Console.WriteLine($"_299: {sampleData._299}");
+            Console.WriteLine($"_300: {sampleData._300}");
+            Console.WriteLine($"_301: {sampleData._301}");
+            Console.WriteLine($"_302: {sampleData._302}");
+            Console.WriteLine($"_303: {sampleData._303}");
+            Console.WriteLine($"_304: {sampleData._304}");
+            Console.WriteLine($"_305: {sampleData._305}");
+            Console.WriteLine($"_306: {sampleData._306}");
+            Console.WriteLine($"_307: {sampleData._307}");
+            Console.WriteLine($"_308: {sampleData._308}");
+            Console.WriteLine($"_309: {sampleData._309}");
+            Console.WriteLine($"_310: {sampleData._310}");
+            Console.WriteLine($"_311: {sampleData._311}");
+            Console.WriteLine($"_312: {sampleData._312}");
+            Console.WriteLine($"_313: {sampleData._313}");
+            Console.WriteLine($"_314: {sampleData._314}");
+            Console.WriteLine($"_315: {sampleData._315}");
+            Console.WriteLine($"_316: {sampleData._316}");
+            Console.WriteLine($"_317: {sampleData._317}");
+            Console.WriteLine($"_318: {sampleData._318}");
+            Console.WriteLine($"_319: {sampleData._319}");
+            Console.WriteLine($"_320: {sampleData._320}");
+            Console.WriteLine($"_321: {sampleData._321}");
+            Console.WriteLine($"_322: {sampleData._322}");
+            Console.WriteLine($"_323: {sampleData._323}");
+            Console.WriteLine($"_324: {sampleData._324}");
+            Console.WriteLine($"_325: {sampleData._325}");
+            Console.WriteLine($"_326: {sampleData._326}");
+            Console.WriteLine($"_327: {sampleData._327}");
+            Console.WriteLine($"_328: {sampleData._328}");
+            Console.WriteLine($"_329: {sampleData._329}");
+            Console.WriteLine($"_330: {sampleData._330}");
+            Console.WriteLine($"_331: {sampleData._331}");
+            Console.WriteLine($"_332: {sampleData._332}");
+            Console.WriteLine($"_333: {sampleData._333}");
+            Console.WriteLine($"_334: {sampleData._334}");
+            Console.WriteLine($"_335: {sampleData._335}");
+            Console.WriteLine($"_336: {sampleData._336}");
+            Console.WriteLine($"_337: {sampleData._337}");
+            Console.WriteLine($"_338: {sampleData._338}");
+            Console.WriteLine($"_339: {sampleData._339}");
+            Console.WriteLine($"_340: {sampleData._340}");
+            Console.WriteLine($"_341: {sampleData._341}");
+            Console.WriteLine($"_342: {sampleData._342}");
+            Console.WriteLine($"_343: {sampleData._343}");
+            Console.WriteLine($"_344: {sampleData._344}");
+            Console.WriteLine($"_345: {sampleData._345}");
+            Console.WriteLine($"_346: {sampleData._346}");
+            Console.WriteLine($"_347: {sampleData._347}");
+            Console.WriteLine($"_348: {sampleData._348}");
+            Console.WriteLine($"_349: {sampleData._349}");
+            Console.WriteLine($"_350: {sampleData._350}");
+            Console.WriteLine($"_351: {sampleData._351}");
+            Console.WriteLine($"_352: {sampleData._352}");
+            Console.WriteLine($"_353: {sampleData._353}");
+            Console.WriteLine($"_354: {sampleData._354}");
+            Console.WriteLine($"_355: {sampleData._355}");
+            Console.WriteLine($"_356: {sampleData._356}");
+            Console.WriteLine($"_357: {sampleData._357}");
+            Console.WriteLine($"_358: {sampleData._358}");
+            Console.WriteLine($"_359: {sampleData._359}");
+            Console.WriteLine($"_360: {sampleData._360}");
+            Console.WriteLine($"_361: {sampleData._361}");
+            Console.WriteLine($"_362: {sampleData._362}");
+            Console.WriteLine($"_363: {sampleData._363}");
+            Console.WriteLine($"_364: {sampleData._364}");
+            Console.WriteLine($"_365: {sampleData._365}");
+            Console.WriteLine($"_366: {sampleData._366}");
+            Console.WriteLine($"_367: {sampleData._367}");
+            Console.WriteLine($"_368: {sampleData._368}");
+            Console.WriteLine($"_369: {sampleData._369}");
+            Console.WriteLine($"_370: {sampleData._370}");
+            Console.WriteLine($"_371: {sampleData._371}");
+            Console.WriteLine($"_372: {sampleData._372}");
+            Console.WriteLine($"_373: {sampleData._373}");
+            Console.WriteLine($"_374: {sampleData._374}");
+            Console.WriteLine($"_375: {sampleData._375}");
+            Console.WriteLine($"_376: {sampleData._376}");
+            Console.WriteLine($"_377: {sampleData._377}");
+            Console.WriteLine($"_378: {sampleData._378}");
+            Console.WriteLine($"_379: {sampleData._379}");
+            Console.WriteLine($"_380: {sampleData._380}");
+            Console.WriteLine($"_381: {sampleData._381}");
+            Console.WriteLine($"_382: {sampleData._382}");
+            Console.WriteLine($"_383: {sampleData._383}");
+            Console.WriteLine($"_384: {sampleData._384}");
+            Console.WriteLine($"_385: {sampleData._385}");
+            Console.WriteLine($"_386: {sampleData._386}");
+            Console.WriteLine($"_387: {sampleData._387}");
+            Console.WriteLine($"_388: {sampleData._388}");
+            Console.WriteLine($"_389: {sampleData._389}");
+            Console.WriteLine($"_390: {sampleData._390}");
+            Console.WriteLine($"_391: {sampleData._391}");
+            Console.WriteLine($"_392: {sampleData._392}");
+            Console.WriteLine($"_393: {sampleData._393}");
+            Console.WriteLine($"_394: {sampleData._394}");
+            Console.WriteLine($"_395: {sampleData._395}");
+            Console.WriteLine($"_396: {sampleData._396}");
+            Console.WriteLine($"_397: {sampleData._397}");
+            Console.WriteLine($"_398: {sampleData._398}");
+            Console.WriteLine($"_399: {sampleData._399}");
+            Console.WriteLine($"_400: {sampleData._400}");
+            Console.WriteLine($"_401: {sampleData._401}");
+            Console.WriteLine($"_402: {sampleData._402}");
+            Console.WriteLine($"_403: {sampleData._403}");
+            Console.WriteLine($"_404: {sampleData._404}");
+            Console.WriteLine($"_405: {sampleData._405}");
+            Console.WriteLine($"_406: {sampleData._406}");
+            Console.WriteLine($"_407: {sampleData._407}");
+            Console.WriteLine($"_408: {sampleData._408}");
+            Console.WriteLine($"_409: {sampleData._409}");
+            Console.WriteLine($"_410: {sampleData._410}");
+            Console.WriteLine($"_411: {sampleData._411}");
+            Console.WriteLine($"_412: {sampleData._412}");
+            Console.WriteLine($"_413: {sampleData._413}");
+            Console.WriteLine($"_414: {sampleData._414}");
+            Console.WriteLine($"_415: {sampleData._415}");
+            Console.WriteLine($"_416: {sampleData._416}");
+            Console.WriteLine($"_417: {sampleData._417}");
+            Console.WriteLine($"_418: {sampleData._418}");
+            Console.WriteLine($"_419: {sampleData._419}");
+            Console.WriteLine($"_420: {sampleData._420}");
+            Console.WriteLine($"_421: {sampleData._421}");
+            Console.WriteLine($"_422: {sampleData._422}");
+            Console.WriteLine($"_423: {sampleData._423}");
+            Console.WriteLine($"_424: {sampleData._424}");
+            Console.WriteLine($"_425: {sampleData._425}");
+            Console.WriteLine($"_426: {sampleData._426}");
+            Console.WriteLine($"_427: {sampleData._427}");
+            Console.WriteLine($"_428: {sampleData._428}");
+            Console.WriteLine($"_429: {sampleData._429}");
+            Console.WriteLine($"_430: {sampleData._430}");
+            Console.WriteLine($"_431: {sampleData._431}");
+            Console.WriteLine($"_432: {sampleData._432}");
+            Console.WriteLine($"_433: {sampleData._433}");
+            Console.WriteLine($"_434: {sampleData._434}");
+            Console.WriteLine($"_435: {sampleData._435}");
+            Console.WriteLine($"_436: {sampleData._436}");
+            Console.WriteLine($"_437: {sampleData._437}");
+            Console.WriteLine($"_438: {sampleData._438}");
+            Console.WriteLine($"_439: {sampleData._439}");
+            Console.WriteLine($"_440: {sampleData._440}");
+            Console.WriteLine($"_441: {sampleData._441}");
+            Console.WriteLine($"_442: {sampleData._442}");
+            Console.WriteLine($"_443: {sampleData._443}");
+            Console.WriteLine($"_444: {sampleData._444}");
+            Console.WriteLine($"_445: {sampleData._445}");
+            Console.WriteLine($"_446: {sampleData._446}");
+            Console.WriteLine($"_447: {sampleData._447}");
+            Console.WriteLine($"_448: {sampleData._448}");
+            Console.WriteLine($"_449: {sampleData._449}");
+            Console.WriteLine($"_450: {sampleData._450}");
+            Console.WriteLine($"_451: {sampleData._451}");
+            Console.WriteLine($"_452: {sampleData._452}");
+            Console.WriteLine($"_453: {sampleData._453}");
+            Console.WriteLine($"_454: {sampleData._454}");
+            Console.WriteLine($"_455: {sampleData._455}");
+            Console.WriteLine($"_456: {sampleData._456}");
+            Console.WriteLine($"_457: {sampleData._457}");
+            Console.WriteLine($"_458: {sampleData._458}");
+            Console.WriteLine($"_459: {sampleData._459}");
+            Console.WriteLine($"_460: {sampleData._460}");
+            Console.WriteLine($"_461: {sampleData._461}");
+            Console.WriteLine($"_462: {sampleData._462}");
+            Console.WriteLine($"_463: {sampleData._463}");
+            Console.WriteLine($"_464: {sampleData._464}");
+            Console.WriteLine($"_465: {sampleData._465}");
+            Console.WriteLine($"_466: {sampleData._466}");
+            Console.WriteLine($"_467: {sampleData._467}");
+            Console.WriteLine($"_468: {sampleData._468}");
+            Console.WriteLine($"_469: {sampleData._469}");
+            Console.WriteLine($"_470: {sampleData._470}");
+            Console.WriteLine($"_471: {sampleData._471}");
+            Console.WriteLine($"_472: {sampleData._472}");
+            Console.WriteLine($"_473: {sampleData._473}");
+            Console.WriteLine($"_474: {sampleData._474}");
+            Console.WriteLine($"_475: {sampleData._475}");
+            Console.WriteLine($"_476: {sampleData._476}");
+            Console.WriteLine($"_477: {sampleData._477}");
+            Console.WriteLine($"_478: {sampleData._478}");
+            Console.WriteLine($"_479: {sampleData._479}");
+            Console.WriteLine($"\n\nPredicted Target value {predictionResult.Prediction} \nPredicted Target scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();
         }

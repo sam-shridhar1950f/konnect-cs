@@ -45,6 +45,7 @@
             <ComboBoxItem x:Name="FarLeftDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="FarLeftWall" Content="Wall"/>
             <ComboBoxItem x:Name="FarLeftSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="FarLeftTrash" Content="Trash"/>
         </ComboBox>
 
         <ComboBox x:Name="LeftDropdown" Canvas.Left="636" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -55,6 +56,8 @@
             <ComboBoxItem x:Name="LeftDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="LeftWall" Content="Wall"/>
             <ComboBoxItem x:Name="LeftSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="LeftTrash" Content="Trash"/>
+
         </ComboBox>
 
         <ComboBox x:Name="CloseLeftDropdown" Canvas.Left="773" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -65,6 +68,8 @@
             <ComboBoxItem x:Name="CloseLeftDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="CloseLeftWall" Content="Wall"/>
             <ComboBoxItem x:Name="CloseLeftSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="CloseLeftTrash" Content="Trash"/>
+
         </ComboBox>
 
         <ComboBox x:Name="CenterDropdown" Canvas.Left="910" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -75,6 +80,7 @@
             <ComboBoxItem x:Name="CenterDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="CenterWall" Content="Wall"/>
             <ComboBoxItem x:Name="CenterSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="CenterTrash" Content="Trash"/>
         </ComboBox>
 
         <ComboBox x:Name="CloseRightDropdown" Canvas.Left="1047" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -85,6 +91,7 @@
             <ComboBoxItem x:Name="CloseRightDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="CloseRightWall" Content="Wall"/>
             <ComboBoxItem x:Name="CloseRightSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="CloseRightTrash" Content="Trash"/>
         </ComboBox>
 
         <ComboBox x:Name="RightDropdown" Canvas.Left="1184" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -95,6 +102,7 @@
             <ComboBoxItem x:Name="RightDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="RightWall" Content="Wall"/>
             <ComboBoxItem x:Name="RightSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="RightTrash" Content="Trash"/>
         </ComboBox>
 
         <ComboBox x:Name="FarRightDropdown" Canvas.Left="1321" Canvas.Top="744" FontWeight="Bold" IsReadOnly="True" Width="100">
@@ -105,6 +113,7 @@
             <ComboBoxItem x:Name="FarRightDownstairs" Content="Downstairs"/>
             <ComboBoxItem x:Name="FarRightWall" Content="Wall"/>
             <ComboBoxItem x:Name="FarRightSideWall" Content="Side Wall"/>
+            <ComboBoxItem x:Name="FarRightTrash" Content="Trash"/>
         </ComboBox>
         <Rectangle Fill="Black" Height="500" Canvas.Left="239" Stroke="Black" Canvas.Top="110" Width="3" Opacity="0.5"/>
         <Rectangle Fill="Black" Height="500" Canvas.Left="319" Stroke="Black" Canvas.Top="110" Width="3" Opacity="0.5"/>

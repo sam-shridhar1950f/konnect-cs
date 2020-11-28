@@ -34,6 +34,5 @@ C:\Kinect Science Fair\Kinect Science Fair\obj\Debug\Kinect Science Fair.csproj.
 C:\Kinect Science Fair\Kinect Science Fair\obj\Debug\Kinect Science Fair.csproj.CopyComplete
 C:\Kinect Science Fair\Kinect Science Fair\obj\Debug\Kinect Science Fair.exe
 C:\Kinect Science Fair\Kinect Science Fair\obj\Debug\Kinect Science Fair.pdb
-C:\Kinect Science Fair\Kinect Science Fair\bin\Debug\MLModel.zip
 C:\Kinect Science Fair\Kinect Science Fair\bin\Debug\Kinect Science FairML.Model.dll
 C:\Kinect Science Fair\Kinect Science Fair\bin\Debug\Kinect Science FairML.Model.pdb

@@ -18,6 +18,8 @@ using System.Windows.Shapes;
 using Microsoft.Kinect; //must be included in references after downloading Kinect 1.8 SDK
 using Kinect_Science_FairML.Model;
 using System.Reflection;
+using Microsoft.ML;
+using System.Speech.Synthesis;
 
 namespace Kinect_Science_Fair
 {
@@ -47,6 +49,8 @@ namespace Kinect_Science_Fair
         /// Intermediate storage for the color data received from the camera
         private byte[] colorPixelsRGBStream;
 
+
+
         public MainWindow()
         {
             InitializeComponent(); //loads main window
@@ -56,9 +60,11 @@ namespace Kinect_Science_Fair
         const float MinDepthDistance = 850; // min value returned
 
 
+
         private void Window_Loaded(object sender, RoutedEventArgs e) //code to be run when window is loaded
         {
             DiscoverKinectSensor(); //calls the DiscoverKinectSensor function which discovers the connected kinect sensor and calls InitializeKinect which XXX
+          
         }
 
         private void DiscoverKinectSensor() //discovers the kinect sensor on startup
@@ -355,7 +361,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataLeft = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataLeft[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataLeft);
                                 break;
@@ -365,7 +378,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataCloseLeft = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataCloseLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataCloseLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataCloseLeft[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataCloseLeft);
                                 break;
@@ -375,7 +395,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataCenter = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataCenter[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataCenter[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataCenter[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataCenter);
                                 break;
@@ -385,7 +412,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataCloseRight = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataCloseRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataCloseRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataCloseRight[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataCloseRight);
                                 break;
@@ -395,7 +429,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataRight = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataRight[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataRight);
                                 break;
@@ -405,7 +446,14 @@ namespace Kinect_Science_Fair
                                 short[] depthDataFarRight = new short[heightPixel];
                                 for (y = 0; y < heightPixel; y++)
                                 {
-                                    depthDataFarRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
+                                    if (depthPixels[x + y * widthPixel].IsKnownDepth)
+                                    {
+                                        depthDataFarRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width       
+                                    }
+                                    else
+                                    {
+                                        depthDataFarRight[y] = UnknownDepthFinder(x, y);
+                                    }
                                 }
                                 DataToCSVTraining(depthDataFarRight);
                                 break;
@@ -645,7 +693,7 @@ namespace Kinect_Science_Fair
 
             string directory = "C:/Kinect Science Fair/Depth Data/"; //sets the directory for the file to be stored in
 
-            string path = System.IO.Path.Combine(directory, "KinectData" + ".csv"); //creates the full file path for the csv file
+            string path = System.IO.Path.Combine(directory, "KinectDataRaw" + ".csv"); //creates the full file path for the csv file
 
             using (System.IO.StreamWriter sw = //makes the writer in append mode XXXXXXXXXXXXXXXXXXXXX consider making streamwriter at the beggining so it does not have to keep reopening
             new System.IO.StreamWriter(path, true))
@@ -742,7 +790,7 @@ namespace Kinect_Science_Fair
 
                                 }
                                 float[] depthDataFarLeftMinMax =  realTimeMinMax(depthDataFarLeft);
-                                realTimeFeedback(depthDataFarLeftMinMax); 
+                                feedbackDisplay(realTimeFeedback(depthDataFarLeftMinMax)); 
                                 break;
                             }
                         case 2:
@@ -753,7 +801,7 @@ namespace Kinect_Science_Fair
                                     depthDataLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataLeftMinMax = realTimeMinMax(depthDataLeft);
-                                realTimeFeedback(depthDataLeftMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataLeftMinMax));
                                 break;
                             }
                         case 3:
@@ -764,7 +812,7 @@ namespace Kinect_Science_Fair
                                     depthDataCloseLeft[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataCloseLeftMinMax = realTimeMinMax(depthDataCloseLeft);
-                                realTimeFeedback(depthDataCloseLeftMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataCloseLeftMinMax));
                                 break;
                             }
                         case 4:
@@ -775,7 +823,7 @@ namespace Kinect_Science_Fair
                                     depthDataCenter[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataCenterMinMax = realTimeMinMax(depthDataCenter);
-                                realTimeFeedback(depthDataCenterMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataCenterMinMax));
                                 break;
                             }
                         case 5:
@@ -786,7 +834,7 @@ namespace Kinect_Science_Fair
                                     depthDataCloseRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataCloseRightMinMax = realTimeMinMax(depthDataCloseRight);
-                                realTimeFeedback(depthDataCloseRightMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataCloseRightMinMax));
                                 break;
                             }
                         case 6:
@@ -797,7 +845,7 @@ namespace Kinect_Science_Fair
                                     depthDataRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataRightMinMax = realTimeMinMax(depthDataRight);
-                                realTimeFeedback(depthDataRightMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataRightMinMax));
                                 break;
                             }
                         case 7:
@@ -808,7 +856,7 @@ namespace Kinect_Science_Fair
                                     depthDataFarRight[y] = depthPixels[x + y * widthPixel].Depth; //adds the depth of the pixel to the short array and finds the depth of the particular pixel on the line profile by using its index found by x + y * width
                                 }
                                 float[] depthDataFarRightMinMax = realTimeMinMax(depthDataFarRight);
-                                realTimeFeedback(depthDataFarRightMinMax);
+                                feedbackDisplay(realTimeFeedback(depthDataFarRightMinMax));
                                 break;
                             }
                     }
@@ -847,52 +895,64 @@ namespace Kinect_Science_Fair
             for (int i = 1; i < 481; i++)
             {
                 Console.WriteLine(properties[i]);
+                Console.WriteLine(depthDataMinMaxParam[i - 1]);
                 properties[i].SetValue(input, depthDataMinMaxParam[i-1]);
+                Console.WriteLine(properties[i].GetValue(input));
             }
             // Load model and predict output of sample data
             ModelOutput result = ConsumeModel.Predict(input);
-            string prediction = result.ToString();
+            string prediction = result.Prediction;
+            Console.WriteLine(prediction);
             return prediction;
         }
 
         void feedbackDisplay(string prediction)
         {
+            // var synthesizer = new SpeechSynthesizer();
+            // synthesizer.SetOutputToDefaultAudioDevice();
             switch (position) //switch case using the position num to determine what the actual object is for the position when the export to csv is clicked. Used to train Neural Network
             {
                 //postion orders are reversed because kinect registers a reversed image that was flipped on the application to better reflect what was being shown
                 case 7:
                     {
-                        FarLeftStatusLabel.Text = prediction;
+                        FarLeftStatusLabel.Text = DateTime.Now.ToString("h:mm:ss tt");
+                        // synthesizer.Speak(prediction);
                         break; //breaks the switch case
                     }
                 case 6:
                     {
                         LeftStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
                 case 5:
                     {
                         CloseLeftStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
                 case 4:
                     {
                         CenterStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
                 case 3:
                     {
                         CloseRightStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
                 case 2:
                     {
                         RightStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
                 case 1:
                     {
                         FarRightStatusLabel.Text = prediction;
+                        // synthesizer.Speak(prediction);
                         break;
                     }
             }

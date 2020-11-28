@@ -9,7 +9,8 @@
     ".NETStandard,Version=v2.0/": {
       "Kinect Science FairML.Model/1.0.0": {
         "dependencies": {
-          "Microsoft.ML": "1.5.0-preview",
+          "Microsoft.ML": "1.5.0",
+          "Microsoft.ML.FastTree": "1.5.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -42,10 +43,10 @@
           }
         }
       },
-      "Microsoft.ML/1.5.0-preview": {
+      "Microsoft.ML/1.5.0": {
         "dependencies": {
-          "Microsoft.ML.CpuMath": "1.5.0-preview",
-          "Microsoft.ML.DataView": "1.5.0-preview",
+          "Microsoft.ML.CpuMath": "1.5.0",
+          "Microsoft.ML.DataView": "1.5.0",
           "Newtonsoft.Json": "10.0.3",
           "System.CodeDom": "4.4.0",
           "System.Collections.Immutable": "1.5.0",
@@ -56,49 +57,61 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.Core.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           },
           "lib/netstandard2.0/Microsoft.ML.Data.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           },
           "lib/netstandard2.0/Microsoft.ML.KMeansClustering.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           },
           "lib/netstandard2.0/Microsoft.ML.PCA.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           },
           "lib/netstandard2.0/Microsoft.ML.StandardTrainers.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           },
           "lib/netstandard2.0/Microsoft.ML.Transforms.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           }
         }
       },
-      "Microsoft.ML.CpuMath/1.5.0-preview": {
+      "Microsoft.ML.CpuMath/1.5.0": {
         "dependencies": {
           "System.Memory": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.CpuMath.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
           }
         }
       },
-      "Microsoft.ML.DataView/1.5.0-preview": {
+      "Microsoft.ML.DataView/1.5.0": {
         "dependencies": {
+          "System.Collections.Immutable": "1.5.0",
           "System.Memory": "4.5.1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.ML.DataView.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.5.28426.5"
+            "fileVersion": "1.5.28926.5"
+          }
+        }
+      },
+      "Microsoft.ML.FastTree/1.5.0": {
+        "dependencies": {
+          "Microsoft.ML": "1.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.5.28926.5"
           }
         }
       },
@@ -679,26 +692,33 @@
       "path": "microsoft.csharp/4.3.0",
       "hashPath": "microsoft.csharp.4.3.0.nupkg.sha512"
     },
-    "Microsoft.ML/1.5.0-preview": {
+    "Microsoft.ML/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CuwGu6mocVV2HpsrAZi2Ls515uS0EaQsjvWdT1fkB0G1WU9+WIkkrGnO04IW/G9X7cfRawPtFCBFICLBUOGSXQ==",
-      "path": "microsoft.ml/1.5.0-preview",
-      "hashPath": "microsoft.ml.1.5.0-preview.nupkg.sha512"
+      "sha512": "sha512-ZjUJCH3bEAAkzy7XLzK2IpPBTRS0weXQmbi+UVr8D2eBVY0Ty8RksvVgkmXcfDOV1CFRxG28krNkTjdjDqNKTg==",
+      "path": "microsoft.ml/1.5.0",
+      "hashPath": "microsoft.ml.1.5.0.nupkg.sha512"
     },
-    "Microsoft.ML.CpuMath/1.5.0-preview": {
+    "Microsoft.ML.CpuMath/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nuk9+ZLSPmdjvaYpYInjZphENBSqYv0KweZvNUzf+S3hH2AYU4ZrIvcPoB0L9qN2fHwpzadaiij76fbylA0vLw==",
-      "path": "microsoft.ml.cpumath/1.5.0-preview",
-      "hashPath": "microsoft.ml.cpumath.1.5.0-preview.nupkg.sha512"
+      "sha512": "sha512-RSERjrAsv8xNt9vec+iMiWcH24QqLyi7Ka7Vwc9DRmmI+q1bmVh0CouGfi1sj8Bi8H9wbzMvb4+ZLJGgxvmHuA==",
+      "path": "microsoft.ml.cpumath/1.5.0",
+      "hashPath": "microsoft.ml.cpumath.1.5.0.nupkg.sha512"
     },
-    "Microsoft.ML.DataView/1.5.0-preview": {
+    "Microsoft.ML.DataView/1.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-X9YmVQxPdchIYpYrsL1sO7mgJ5ndECX7kmuDrzZl67jFVdQ6L7viDMNt7FNxPJ9+MLN7qM/ZKj6BaVtc9J3CxQ==",
-      "path": "microsoft.ml.dataview/1.5.0-preview",
-      "hashPath": "microsoft.ml.dataview.1.5.0-preview.nupkg.sha512"
+      "sha512": "sha512-mKgNqg6aQUyVyTSitNkhPnUcmnEW3P93F0CaLSjOCpYr6hUkYqGZh76YPt5idSuZ2sI4JcvgelszLZT+wrQGkQ==",
+      "path": "microsoft.ml.dataview/1.5.0",
+      "hashPath": "microsoft.ml.dataview.1.5.0.nupkg.sha512"
+    },
+    "Microsoft.ML.FastTree/1.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M8/1Xax7aW8rPPam0rb965zxsmgVt3uWQZDdDuoLwUlznppz9xwZ1EbJWRLf4eryAaPRShF1o62yW7sGauZXoQ==",
+      "path": "microsoft.ml.fasttree/1.5.0",
+      "hashPath": "microsoft.ml.fasttree.1.5.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
