@@ -1,4 +1,3 @@
-C:\Kinect Science Fair\Kinect Science FairML.Model\bin\Debug\netstandard2.0\MLModel.zip
 C:\Kinect Science Fair\Kinect Science FairML.Model\bin\Debug\netstandard2.0\Kinect Science FairML.Model.deps.json
 C:\Kinect Science Fair\Kinect Science FairML.Model\bin\Debug\netstandard2.0\Kinect Science FairML.Model.dll
 C:\Kinect Science Fair\Kinect Science FairML.Model\bin\Debug\netstandard2.0\Kinect Science FairML.Model.pdb

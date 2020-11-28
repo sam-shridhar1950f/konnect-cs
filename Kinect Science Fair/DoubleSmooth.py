@@ -14,7 +14,7 @@ def nearestNeighborAfter(i):
             break
     return 7, 0
 
-with open('Depth Data/KinectData.csv', 'r', newline='') as file:
+with open('Depth Data/KinectDataWallConfig.csv', 'r', newline='') as file:
     reader = csv.reader(file)
     fileWriter = open("Depth Data/KinectDataDoubleSmoothed.csv", "w")
     for row in reader:

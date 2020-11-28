@@ -40,7 +40,11 @@
           "dependencies": {
             "Microsoft.ML": {
               "target": "Package",
-              "version": "[1.5.0-preview, )"
+              "version": "[1.5.2, )"
+            },
+            "Microsoft.ML.FastTree": {
+              "target": "Package",
+              "version": "[1.5.2, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -59,7 +63,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
