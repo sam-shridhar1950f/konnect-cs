@@ -64,3 +64,5 @@ C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\lib_lightgbm.dll
 C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\lightgbm.exe
 C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\Microsoft.ML.LightGbm.dll
 C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\Microsoft.ML.LightGbm.xml
+C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\Microsoft.ML.dll
+C:\Kinect Science Fair\Kinect Science Fair\bin\x64\Debug\Microsoft.ML.xml

@@ -15,6 +15,8 @@ namespace Kinect_Science_FairML.ConsoleApp
         private static string TRAIN_DATA_FILEPATH = @"C:\Kinect Science Fair\Depth Data\KinectDataMinMax.csv";
         private static string MODEL_FILE = ConsumeModel.MLNetModelPath;
 
+        
+
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
         private static MLContext mlContext = new MLContext(seed: 1);
@@ -107,6 +109,8 @@ namespace Kinect_Science_FairML.ConsoleApp
                 Console.WriteLine($"    LogLoss for class {i + 1} = {metrics.PerClassLogLoss[i]:0.####}, the closer to 0, the better");
             }
             Console.WriteLine($"************************************************************");
+            Console.WriteLine(metrics.ConfusionMatrix);
+
         }
 
         public static void PrintMulticlassClassificationFoldsAverageMetrics(IEnumerable<TrainCatalogBase.CrossValidationResult<MulticlassClassificationMetrics>> crossValResults)
