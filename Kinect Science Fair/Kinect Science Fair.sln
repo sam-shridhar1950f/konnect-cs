@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kinect Science Fair", "Kinect Science Fair\Kinect Science Fair.csproj", "{7BC823AE-A251-4E19-B9EA-D0D71CB0B06E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinect Science FairML.Model", "Kinect Science FairML.Model\Kinect Science FairML.Model.csproj", "{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinect Science FairML.Model", "Kinect Science FairML.Model\Kinect Science FairML.Model.csproj", "{5308714A-0FFA-41A3-B713-4210A7CD750A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinect Science FairML.ConsoleApp", "Kinect Science FairML.ConsoleApp\Kinect Science FairML.ConsoleApp.csproj", "{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kinect Science FairML.ConsoleApp", "Kinect Science FairML.ConsoleApp\Kinect Science FairML.ConsoleApp.csproj", "{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,22 +25,22 @@ Global
 		{7BC823AE-A251-4E19-B9EA-D0D71CB0B06E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7BC823AE-A251-4E19-B9EA-D0D71CB0B06E}.Release|x64.ActiveCfg = Release|x64
 		{7BC823AE-A251-4E19-B9EA-D0D71CB0B06E}.Release|x64.Build.0 = Release|x64
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Debug|x64.ActiveCfg = Debug|x64
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Debug|x64.Build.0 = Debug|x64
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Release|x64.ActiveCfg = Release|x64
-		{FFA53537-EA1B-41DE-8378-D3CC1AD4224F}.Release|x64.Build.0 = Release|x64
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Debug|x64.ActiveCfg = Debug|x64
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Debug|x64.Build.0 = Debug|x64
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Release|x64.ActiveCfg = Release|x64
-		{8FE9B1E5-2BF7-405E-8055-FD0F68575B31}.Release|x64.Build.0 = Release|x64
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Debug|x64.Build.0 = Debug|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Release|x64.ActiveCfg = Release|Any CPU
+		{5308714A-0FFA-41A3-B713-4210A7CD750A}.Release|x64.Build.0 = Release|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Debug|x64.Build.0 = Debug|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Release|x64.ActiveCfg = Release|Any CPU
+		{286F3BF4-9C71-4BF3-99D8-FB835FA61D55}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

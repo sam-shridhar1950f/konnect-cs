@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ldanative.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cpumathnative.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lib_lightgbm.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("lightgbm.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("fasttreenative.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ldanative.dll")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cpumathnative.dll")]
 
 

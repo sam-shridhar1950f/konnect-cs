@@ -7,3 +7,4 @@ C:\Kinect Science Fair\Kinect Science FairML.Model\obj\Debug\netstandard2.0\Kine
 C:\Kinect Science Fair\Kinect Science FairML.Model\obj\Debug\netstandard2.0\Kinect Science FairML.Model.csproj.CoreCompileInputs.cache
 C:\Kinect Science Fair\Kinect Science FairML.Model\obj\Debug\netstandard2.0\Kinect Science FairML.Model.dll
 C:\Kinect Science Fair\Kinect Science FairML.Model\obj\Debug\netstandard2.0\Kinect Science FairML.Model.pdb
+C:\Kinect Science Fair\Kinect Science FairML.Model\bin\Debug\netstandard2.0\MLModel.zip
