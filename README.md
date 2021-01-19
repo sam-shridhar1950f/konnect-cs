@@ -13,7 +13,7 @@
 <br/>
 
 <h3>Training:</h3>
-<img src="https://raw.githubusercontent.com/hershyz/CRNN/main/assets/training.gif"/>
+<img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.PNG"/>
 
 <h3>Predictions:</h3>
 <img src="https://raw.githubusercontent.com/hershyz/CRNN/main/assets/testing.gif"/>
