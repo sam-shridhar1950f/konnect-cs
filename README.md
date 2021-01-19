@@ -1,6 +1,8 @@
 [![HitCount](http://hits.dwyl.com/hershyz/CRNN.svg)](http://hits.dwyl.com/hershyz/CRNN)
-
+<p align="center">
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/logo.png"/>
+</p>
+
 <p><i>Forecast COVID-19 risk in any geographical area using a predictive neural network.</i></p>
 
 
