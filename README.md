@@ -12,7 +12,7 @@
 
 <br/>
 
-<h3>Training:</h3>
+<h3>Prototype:</h3>
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.PNG"/>
 
 <h3>Predictions:</h3>
