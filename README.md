@@ -1,7 +1,7 @@
-
+[![HitCount](http://hits.dwyl.com/hershyz/CRNN.svg)](http://hits.dwyl.com/hershyz/CRNN)
 <p align="center">
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/logo.png"/>
-[![HitCount](http://hits.dwyl.com/hershyz/CRNN.svg)](http://hits.dwyl.com/hershyz/CRNN)
+
 </p>
 <p align="center">
 <i>Konnect, pioneering the combination of machine learning and inexpensive rehabilitation.</i>
