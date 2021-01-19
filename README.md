@@ -8,7 +8,7 @@
 </p>
 
 
-<p>
+<p align="center">
   The code in this repository was a software engineering project in the <a href="https://www.gcpsk12.org/gsmst">GSMST</a> engineering fair.<br/>
   Konnect is an intelligent, affordable assistive wearable constructed in the .NET framework.
 </p>
