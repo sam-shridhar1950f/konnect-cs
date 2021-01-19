@@ -99,8 +99,6 @@
 
 <h3>Project Documents:</h3>
 <ul>
-  <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/Background%20Research%20Outline.pdf">Background Research Outline</a></li>
-  <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/Research%20Plan.pdf">Research Plan</a></li>
   <li><a href="https://github.com/sam-shridhar1950f/konnect-cs/blob/master/Paper/Kinect Analysis of Obstacles & Feedback for the Visually-Impaired.pdf">Short Paper</a></li>
   <li><a href="https://github.com/sam-shridhar1950f/konnect-cs/blob/master/Documentation/Slideshow.pdf">Final Slideshow</a></li>
 </ul>
