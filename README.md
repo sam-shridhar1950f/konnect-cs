@@ -102,5 +102,5 @@
   <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/Background%20Research%20Outline.pdf">Background Research Outline</a></li>
   <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/Research%20Plan.pdf">Research Plan</a></li>
   <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/CERA.pdf">CERA</a></li>
-  <li><a href="https://github.com/hershyz/CRNN/blob/main/documents/slides.pdf">Final Slideshow</a></li>
+  <li><a href="https://github.com/sam-shridhar1950f/konnect-cs/blob/master/Documentation/Slideshow.pdf">Final Slideshow</a></li>
 </ul>
