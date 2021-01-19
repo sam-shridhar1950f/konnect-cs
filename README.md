@@ -14,13 +14,14 @@
 </p>
 
 <br/>
-
+<p align="center">
 <h3>Prototype:</h3>
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.PNG"/>
-
+</p>
+<p align="center">
 <h3>GUI:</h3>
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/GUI.PNG"/>
-
+</p>
 <h3>Datasets:</h3>
 <p>A dataset in a spreadsheet would look like this, having labels and text corresponding to numerical data.</p>
 <table class="tg">
