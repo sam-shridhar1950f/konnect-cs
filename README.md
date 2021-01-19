@@ -7,7 +7,7 @@
 
 <p>
   The code in this repository was a software engineering project in the <a href="https://www.gcpsk12.org/gsmst">GSMST</a> engineering fair.<br/>
-  Konnect is an intelligent, affordable assistive wearable made in the .NET framework.
+  Konnect is an intelligent, affordable assistive wearable constructed in the .NET framework.
 </p>
 
 <br/>
@@ -16,7 +16,7 @@
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.PNG"/>
 
 <h3>Predictions:</h3>
-<img src="https://raw.githubusercontent.com/hershyz/CRNN/main/assets/testing.gif"/>
+<img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/GUI.PNG"/>
 
 <h3>Datasets:</h3>
 <p>A dataset in a spreadsheet would look like this, having labels and text corresponding to numerical data.</p>
