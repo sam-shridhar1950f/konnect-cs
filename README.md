@@ -1,9 +1,10 @@
 [![HitCount](http://hits.dwyl.com/hershyz/CRNN.svg)](http://hits.dwyl.com/hershyz/CRNN)
 <p align="center">
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/logo.png"/>
+ <p><i>Konnect, pioneering the combination of machine learning and inexpensive rehabilitation.</i></p>
 </p>
 
-<p><i>Forecast COVID-19 risk in any geographical area using a predictive neural network.</i></p>
+
 
 
 
