@@ -23,84 +23,18 @@
 <h3>GUI:</h3>
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/GUI.PNG"/>
 </p>
-<h3>Datasets:</h3>
-<p>A dataset in a spreadsheet would look like this, having labels and text corresponding to numerical data.</p>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">Geographical Area</th>
-    <th class="tg-0pky">Factor1</th>
-    <th class="tg-0pky">Factor2</th>
-    <th class="tg-0pky">Factor3</th>
-    <th class="tg-0pky">Factor n...</th>
-    <th class="tg-0lax">Confirmed COVID-19 Deaths</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">area1</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0lax">x...</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">area2</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0lax">y...</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">area3</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0lax">z...</td>
-  </tr>
-</tbody>
-</table>
-
-<p>
-  Training and prediction datasets passed into the network must be stripped of all text as shown below.
-  A dataset may have any number of numerical input factors, but the last output column must always be the number of confirmed COVID-19 deaths in the respective geographic area.<br/>
-  This is becasue the training algorithm finds the impact correlation of each feature on the resulting deathcount of an area, being able to predict risk of new geographic areas.
-</p> 
-
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-0pky">#</th>
-    <th class="tg-0pky">#</th>
-    <th class="tg-0pky">#</th>
-    <th class="tg-0pky">#</th>
-    <th class="tg-0lax">x...</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0lax">y...</td>
-  </tr>
-  <tr>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0pky">#</td>
-    <td class="tg-0lax">z...</td>
-  </tr>
-</tbody>
-</table>
-
-<p>Datasets used for training, testing, and diagnosis throughout the course of this project can be found <a href="https://github.com/hershyz/CRNN/tree/main/datasets">here</a>.</p>
 
 <br/>
+
+<h3>Awards 🏆</h3>
+<ul>
+  <li>2nd Place in GSMST Science and Engineering Fair</li>
+  <li>2nd Place in Georgia's Junior Science & Humanities Symposium</li>
+  <li>Competitor at the National Junior Science & Humanities Symposium</li>
+</ul>
+
+<br/>
+
 
 <h3>Project Documents:</h3>
 <ul>
