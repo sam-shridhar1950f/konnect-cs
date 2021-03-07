@@ -30,7 +30,7 @@
 <ul>
   <li>2nd Place in GSMST Science and Engineering Fair</li>
   <li>2nd Place Finalist in Georgia's Junior Science & Humanities Symposium</li>
-  <li>Competitor at the National Junior Science & Humanities Symposium</li>
+  <li>Competitor in the National Junior Science & Humanities Symposium</li>
 </ul>
 
 <br/>
