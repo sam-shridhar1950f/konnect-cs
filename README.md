@@ -4,7 +4,7 @@
 
 </p>
 <p align="center">
-<i>Konnect, pioneering the combination of machine learning and inexpensive rehabilitation.</i>
+<i>Konnect, an award winning assistive technology pioneering the combination of machine learning and inexpensive rehabilitation.</i>
 </p>
 
 
