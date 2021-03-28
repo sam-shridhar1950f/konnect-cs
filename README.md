@@ -16,7 +16,7 @@
 <br/>
 <p align="center">
 <h3>Prototype:</h3>
-<img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.PNG"/>
+<img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/model.png"/>
 <img src="https://raw.githubusercontent.com/sam-shridhar1950f/konnect-cs/master/Documentation/Testing2.gif"/>
 </p>
 <p align="center">
