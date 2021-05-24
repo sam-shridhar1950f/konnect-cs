@@ -25,6 +25,13 @@
 
 <br/>
 
+<h3>Team Members:</h3>
+<ul>
+  <li>Mitesh Shah - <a href="https://github.com/JBPrew">@StudioMitesh</a></li>
+  <li>Utkarsh Borikar</li>
+</ul>
+<br>
+
 <h3>Awards 🏆</h3>
 <ul>
   <li>2nd Place in GSMST Science and Engineering Fair</li>
