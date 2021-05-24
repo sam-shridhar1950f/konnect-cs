@@ -27,7 +27,7 @@
 
 <h3>Team Members:</h3>
 <ul>
-  <li>Mitesh Shah - <a href="https://github.com/JBPrew">@StudioMitesh</a></li>
+  <li>Jack Prewitt - <a href="https://github.com/JBPrew">@JBPrew</a></li>
   <li>Utkarsh Borikar</li>
 </ul>
 <br>
